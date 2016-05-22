@@ -1,29 +1,17 @@
-# Vapor Example
+# TodoBackend implementation using Vapor
 
-Fork this example project as a boilerplate for working with Vapor.
+[Vapor](https://github.com/qutheory/vapor) is a Swift backend framework to build server-side applications in Swift.
 
-Check out the [live demo](http://example.qutheory.io) running on Ubuntu.
+[TodoBackend][http://www.todobackend.com] is a proof-of-concept catalog to demonstrate the implementation of the same simple API using different backend frameworks.
 
-## Badges
-[![Build Status](https://img.shields.io/travis/qutheory/vapor-example.svg?style=flat-square)](https://travis-ci.org/qutheory/vapor-example)
-[![PRs Welcome](https://img.shields.io/badge/prs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![Slack Status](http://slack.tanner.xyz:8085/badge.svg?style=flat-square)](http://slack.tanner.xyz:8085)
-
-## Documentation
-
-View [Vapor](https://github.com/qutheory/vapor) for documentation.
+This project is a TodoBackend implementation using Vapor, Swift and MongoDB as a backend stack.
 
 ## Requirements
 
-Swift 2.2 or later is required (3.0 or later for certain features).
-
-Works on Ubuntu, Docker, Heroku, OS X
+Swift 3.0 is required, but not just any snapshot version, only the one that is specified in .swift-version will work.
 
 ## Building
 
-### Swift 2.2
-
-Visit [Getting Started](https://github.com/qutheory/vapor/wiki/Setup) in the Vapor Wiki for more details about using Swift 2.2.
 
 ### Swift 3.0
 
@@ -55,15 +43,13 @@ vapor help
 
 ### Compiling
 
-If you have the Vapor CLI, use `vapor new <project-name>` to create your new application.
-
-Then run `vapor build` and `vapor run`.
+If you have the Vapor CLI, use `vapor build` and `vapor run`.
 
 Otherwise, clone this repo and run `swift build` to compile your application, then run `.build/debug/App`. 
 
 ### Xcode 7.3
 
-Open the `VaporApp.xcodeproj` with Xcode 7.3 and make sure Xcode > Toolchains is set to `swift-DEVELOPMENT-SNAPSHOT-2016-03-24-a.xctoolchain` or later. 
+Open the `VaporApp.xcodeproj` with Xcode 7.3 and make sure Xcode > Toolchains is set to `swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain` or later. 
 
 ![Xcode](https://cloud.githubusercontent.com/assets/1342803/14158906/d53931be-f6a0-11e5-8282-02ab8cda31a9.png)
 
@@ -103,7 +89,7 @@ sudo start vapor-example
 
 ### Heroku / Swifton.me
 
-[![Deploy to Swifton.me](https://serve.swifton.me/badge.png)](https://serve.swifton.me/oneclick?repository=https://github.com/tannernelson/vapor-example)
+[![Deploy to Swifton.me](https://serve.swifton.me/badge.png)](https://serve.swifton.me/oneclick?repository=https://github.com/sarbogast/vapor-example)
 
 ### Docker
 You can run this demo application locally in a Linux environment using Docker.
