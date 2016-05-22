@@ -6,14 +6,14 @@ class TodoController: Controller {
     private let todoDao:TodoDao?
 
     required init(application: Application) {
-        Log.info("Todo controller created")
         do {
             try todoDao = TodoDaoImpl()
         }
         catch {
-            print("Could not initialize Todo Dao")
+            Log.error("Could not initialize Todo Dao")
             todoDao = nil
         }
+        Log.info("Todo controller created")
     }
 
     func index(_ request: Request) throws -> ResponseRepresentable {

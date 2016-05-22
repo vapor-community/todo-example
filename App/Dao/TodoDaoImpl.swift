@@ -9,15 +9,17 @@
 import Foundation
 import MongoKitten
 
-class TodoDaoImpl: MongoDaoBaseImpl, TodoDao {
+class TodoDaoImpl: TodoDao {
     let collectionName = "todos"
     
-    var collection:MongoKitten.Collection {
-        return self.database[collectionName]
-    }
+    private let collection:MongoKitten.Collection
     
-    override init() throws {
-        try super.init()
+    init() throws {
+        if let repository = MongoRepository.sharedRepository {
+            self.collection = repository.database[collectionName]
+        } else {
+            throw MongoRepositoryError.CouldNotConnect
+        }
     }
     
     func createTodo(_ todo:Todo) -> Todo? {
