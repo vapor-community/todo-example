@@ -2734,101 +2734,101 @@
         _______Group_BSON = {
             isa = PBXGroup;
             name = BSON;
-            path = 'Packages/BSON-2.3.1/Sources';
+            path = 'Packages/BSON-2.3.2/Sources';
             sourceTree = '<group>';
-            children = ('__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+LiteralConvertibles.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+Operators.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+SequenceType.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+Serialization.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Element.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Error.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Helpers.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/ObjectId.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Comparing.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Extraction.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+LiteralConvertibles.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Serialization.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Subscript.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/ValueConvertible.swift');
+            children = ('__PBXFileRef_Packages/BSON-2.3.2/Sources/Document+LiteralConvertibles.swift', '__PBXFileRef_Packages/BSON-2.3.2/Sources/Document+Operators.swift', '__PBXFileRef_Packages/BSON-2.3.2/Sources/Document+SequenceType.swift', '__PBXFileRef_Packages/BSON-2.3.2/Sources/Document+Serialization.swift', '__PBXFileRef_Packages/BSON-2.3.2/Sources/Document.swift', '__PBXFileRef_Packages/BSON-2.3.2/Sources/Element.swift', '__PBXFileRef_Packages/BSON-2.3.2/Sources/Error.swift', '__PBXFileRef_Packages/BSON-2.3.2/Sources/Helpers.swift', '__PBXFileRef_Packages/BSON-2.3.2/Sources/ObjectId.swift', '__PBXFileRef_Packages/BSON-2.3.2/Sources/Value+Comparing.swift', '__PBXFileRef_Packages/BSON-2.3.2/Sources/Value+Extraction.swift', '__PBXFileRef_Packages/BSON-2.3.2/Sources/Value+LiteralConvertibles.swift', '__PBXFileRef_Packages/BSON-2.3.2/Sources/Value+Serialization.swift', '__PBXFileRef_Packages/BSON-2.3.2/Sources/Value+Subscript.swift', '__PBXFileRef_Packages/BSON-2.3.2/Sources/Value.swift', '__PBXFileRef_Packages/BSON-2.3.2/Sources/ValueConvertible.swift');
         };
-        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+LiteralConvertibles.swift' = {
+        '__PBXFileRef_Packages/BSON-2.3.2/Sources/Document+LiteralConvertibles.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Document+LiteralConvertibles.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+Operators.swift' = {
+        '__PBXFileRef_Packages/BSON-2.3.2/Sources/Document+Operators.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Document+Operators.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+SequenceType.swift' = {
+        '__PBXFileRef_Packages/BSON-2.3.2/Sources/Document+SequenceType.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Document+SequenceType.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+Serialization.swift' = {
+        '__PBXFileRef_Packages/BSON-2.3.2/Sources/Document+Serialization.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Document+Serialization.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document.swift' = {
+        '__PBXFileRef_Packages/BSON-2.3.2/Sources/Document.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Document.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Element.swift' = {
+        '__PBXFileRef_Packages/BSON-2.3.2/Sources/Element.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Element.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Error.swift' = {
+        '__PBXFileRef_Packages/BSON-2.3.2/Sources/Error.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Error.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Helpers.swift' = {
+        '__PBXFileRef_Packages/BSON-2.3.2/Sources/Helpers.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Helpers.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/BSON-2.3.1/Sources/ObjectId.swift' = {
+        '__PBXFileRef_Packages/BSON-2.3.2/Sources/ObjectId.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'ObjectId.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Comparing.swift' = {
+        '__PBXFileRef_Packages/BSON-2.3.2/Sources/Value+Comparing.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Value+Comparing.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Extraction.swift' = {
+        '__PBXFileRef_Packages/BSON-2.3.2/Sources/Value+Extraction.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Value+Extraction.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+LiteralConvertibles.swift' = {
+        '__PBXFileRef_Packages/BSON-2.3.2/Sources/Value+LiteralConvertibles.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Value+LiteralConvertibles.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Serialization.swift' = {
+        '__PBXFileRef_Packages/BSON-2.3.2/Sources/Value+Serialization.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Value+Serialization.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Subscript.swift' = {
+        '__PBXFileRef_Packages/BSON-2.3.2/Sources/Value+Subscript.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Value+Subscript.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value.swift' = {
+        '__PBXFileRef_Packages/BSON-2.3.2/Sources/Value.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Value.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/BSON-2.3.1/Sources/ValueConvertible.swift' = {
+        '__PBXFileRef_Packages/BSON-2.3.2/Sources/ValueConvertible.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'ValueConvertible.swift';
@@ -2853,7 +2853,7 @@
         };
         CompilePhase_BSON = {
             isa = PBXSourcesBuildPhase;
-            files = ('__src_cc_ref_Packages/BSON-2.3.1/Sources/Document+LiteralConvertibles.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Document+Operators.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Document+SequenceType.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Document+Serialization.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Document.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Element.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Error.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Helpers.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/ObjectId.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value+Comparing.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value+Extraction.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value+LiteralConvertibles.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value+Serialization.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value+Subscript.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/ValueConvertible.swift');
+            files = ('__src_cc_ref_Packages/BSON-2.3.2/Sources/Document+LiteralConvertibles.swift', '__src_cc_ref_Packages/BSON-2.3.2/Sources/Document+Operators.swift', '__src_cc_ref_Packages/BSON-2.3.2/Sources/Document+SequenceType.swift', '__src_cc_ref_Packages/BSON-2.3.2/Sources/Document+Serialization.swift', '__src_cc_ref_Packages/BSON-2.3.2/Sources/Document.swift', '__src_cc_ref_Packages/BSON-2.3.2/Sources/Element.swift', '__src_cc_ref_Packages/BSON-2.3.2/Sources/Error.swift', '__src_cc_ref_Packages/BSON-2.3.2/Sources/Helpers.swift', '__src_cc_ref_Packages/BSON-2.3.2/Sources/ObjectId.swift', '__src_cc_ref_Packages/BSON-2.3.2/Sources/Value+Comparing.swift', '__src_cc_ref_Packages/BSON-2.3.2/Sources/Value+Extraction.swift', '__src_cc_ref_Packages/BSON-2.3.2/Sources/Value+LiteralConvertibles.swift', '__src_cc_ref_Packages/BSON-2.3.2/Sources/Value+Serialization.swift', '__src_cc_ref_Packages/BSON-2.3.2/Sources/Value+Subscript.swift', '__src_cc_ref_Packages/BSON-2.3.2/Sources/Value.swift', '__src_cc_ref_Packages/BSON-2.3.2/Sources/ValueConvertible.swift');
             runOnlyForDeploymentPostprocessing = 0;
         };
         ___LinkPhase_BSON = {
@@ -2861,69 +2861,69 @@
             files = ();
             runOnlyForDeploymentPostprocessing = 0;
         };
-        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Document+LiteralConvertibles.swift' = {
+        '__src_cc_ref_Packages/BSON-2.3.2/Sources/Document+LiteralConvertibles.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+LiteralConvertibles.swift';
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.2/Sources/Document+LiteralConvertibles.swift';
         };
-        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Document+Operators.swift' = {
+        '__src_cc_ref_Packages/BSON-2.3.2/Sources/Document+Operators.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+Operators.swift';
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.2/Sources/Document+Operators.swift';
         };
-        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Document+SequenceType.swift' = {
+        '__src_cc_ref_Packages/BSON-2.3.2/Sources/Document+SequenceType.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+SequenceType.swift';
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.2/Sources/Document+SequenceType.swift';
         };
-        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Document+Serialization.swift' = {
+        '__src_cc_ref_Packages/BSON-2.3.2/Sources/Document+Serialization.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+Serialization.swift';
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.2/Sources/Document+Serialization.swift';
         };
-        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Document.swift' = {
+        '__src_cc_ref_Packages/BSON-2.3.2/Sources/Document.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document.swift';
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.2/Sources/Document.swift';
         };
-        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Element.swift' = {
+        '__src_cc_ref_Packages/BSON-2.3.2/Sources/Element.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Element.swift';
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.2/Sources/Element.swift';
         };
-        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Error.swift' = {
+        '__src_cc_ref_Packages/BSON-2.3.2/Sources/Error.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Error.swift';
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.2/Sources/Error.swift';
         };
-        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Helpers.swift' = {
+        '__src_cc_ref_Packages/BSON-2.3.2/Sources/Helpers.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Helpers.swift';
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.2/Sources/Helpers.swift';
         };
-        '__src_cc_ref_Packages/BSON-2.3.1/Sources/ObjectId.swift' = {
+        '__src_cc_ref_Packages/BSON-2.3.2/Sources/ObjectId.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/ObjectId.swift';
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.2/Sources/ObjectId.swift';
         };
-        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value+Comparing.swift' = {
+        '__src_cc_ref_Packages/BSON-2.3.2/Sources/Value+Comparing.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Comparing.swift';
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.2/Sources/Value+Comparing.swift';
         };
-        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value+Extraction.swift' = {
+        '__src_cc_ref_Packages/BSON-2.3.2/Sources/Value+Extraction.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Extraction.swift';
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.2/Sources/Value+Extraction.swift';
         };
-        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value+LiteralConvertibles.swift' = {
+        '__src_cc_ref_Packages/BSON-2.3.2/Sources/Value+LiteralConvertibles.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+LiteralConvertibles.swift';
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.2/Sources/Value+LiteralConvertibles.swift';
         };
-        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value+Serialization.swift' = {
+        '__src_cc_ref_Packages/BSON-2.3.2/Sources/Value+Serialization.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Serialization.swift';
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.2/Sources/Value+Serialization.swift';
         };
-        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value+Subscript.swift' = {
+        '__src_cc_ref_Packages/BSON-2.3.2/Sources/Value+Subscript.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Subscript.swift';
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.2/Sources/Value+Subscript.swift';
         };
-        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value.swift' = {
+        '__src_cc_ref_Packages/BSON-2.3.2/Sources/Value.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value.swift';
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.2/Sources/Value.swift';
         };
-        '__src_cc_ref_Packages/BSON-2.3.1/Sources/ValueConvertible.swift' = {
+        '__src_cc_ref_Packages/BSON-2.3.2/Sources/ValueConvertible.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/ValueConvertible.swift';
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.2/Sources/ValueConvertible.swift';
         };
         _LinkFileRef_BSON = {
             isa = PBXBuildFile;

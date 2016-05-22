@@ -12,15 +12,6 @@ import MongoKitten
 class TodoDaoImpl: MongoDaoBaseImpl, TodoDao {
     let collectionName = "todos"
     
-    var iso8601:NSDateFormatter {
-        let df = NSDateFormatter()
-        let enUSPOSIXLocale = NSLocale(localeIdentifier: "en_US_POSIX")
-        df.locale = enUSPOSIXLocale
-        df.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
-        df.timeZone = NSTimeZone(abbreviation: "UTC")
-        return df
-    }
-    
     var collection:MongoKitten.Collection {
         return self.database[collectionName]
     }
@@ -31,9 +22,6 @@ class TodoDaoImpl: MongoDaoBaseImpl, TodoDao {
     
     func createTodo(_ todo:Todo) -> Todo? {
         do {
-            let now = NSDate()
-            let creationDate = self.iso8601.string(from: now)
-            todo.dateCreated = creationDate
             let documentToInsert = todo.makeBson()
             let todoDocument = try self.collection.insert(documentToInsert)
             return try Todo(fromBson:todoDocument)
@@ -51,13 +39,7 @@ class TodoDaoImpl: MongoDaoBaseImpl, TodoDao {
             var todos = [Todo]()
             let resultTodos = try self.collection.find()
             
-            /*.sorted(isOrderedBefore: { (doc1:Document, doc2:Document) -> Bool in
-                return doc1["dateCreated"].string.compare(doc2["dateCreated"].string) == NSComparisonResult.orderedDescending
-            })*/
-            
             for result in resultTodos {
-                let completed = result["completed"].boolValue
-                print("completed:\(completed)")
                 if let todo = try Todo(fromBson: result) {
                     todos.append(todo)
                 }

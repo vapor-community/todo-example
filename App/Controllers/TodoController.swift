@@ -41,7 +41,7 @@ class TodoController: Controller {
             } else {
                 completed = false
             }
-            if let todo = todoDao.createTodo(Todo(id: nil, title: title, completed: completed, dateCreated: nil, order: request.data["order"].int)){
+            if let todo = todoDao.createTodo(Todo(id: nil, title: title, completed: completed, order: request.data["order"].int)){
                 return todo
             } else {
                 throw Abort.internalServerError

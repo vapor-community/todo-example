@@ -5,7 +5,6 @@ final class Todo {
     var id: String?
     var title: String?
     var completed: Bool = false
-    var dateCreated:String?
     var order:Int?
     
     var url:String? {
@@ -16,11 +15,10 @@ final class Todo {
         }
     }
     
-    init(id:String? = nil, title:String? = nil, completed:Bool = false, dateCreated:String? = nil, order:Int? = nil) {
+    init(id:String? = nil, title:String? = nil, completed:Bool = false, order:Int? = nil) {
         self.title = title
         self.id = id
         self.completed = completed
-        self.dateCreated = dateCreated
         self.order = order
     }
 }
@@ -42,9 +40,7 @@ extension Todo: JsonRepresentable {
         if let title = title {
             json["title"] = .string(title)
         }
-        if let dateCreated = dateCreated {
-            json["dateCreated"] = .string(dateCreated)
-        }
+        
         if let order = order {
             json["order"] = .number(Double(order))
         }
@@ -64,7 +60,7 @@ extension Todo: StringInitializable {
 
 extension Todo {
     convenience init?(fromBson bson:Document) throws {
-        self.init(id:bson["_id"].string, title: bson["title"].string, completed: bson["completed"].bool, dateCreated: bson["dateCreated"].string, order:bson["order"].int)
+        self.init(id:bson["_id"].string, title: bson["title"].string, completed: bson["completed"].bool, order:bson["order"].int)
     }
     
     func makeBson() -> Document {
@@ -77,9 +73,6 @@ extension Todo {
         }
         if let id = self.id {
             bson["objectID"] = .objectId(try! ObjectId(id))
-        }
-        if let dateCreated = self.dateCreated {
-            bson["dateCreated"] = ~dateCreated
         }
         if let order = self.order {
             bson["order"] = ~order
