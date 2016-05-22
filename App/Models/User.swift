@@ -2,14 +2,14 @@ import Vapor
 
 final class User {
     var name: String
-    
+
     init(name: String) {
         self.name = name
     }
 }
 
 /**
-	This allows instances of User to be 
+	This allows instances of User to be
 	passed into Json arrays and dictionaries
 	as if it were a native JSON type.
 */
@@ -22,7 +22,7 @@ extension User: JsonRepresentable {
 }
 
 /**
-	If a data structure is StringInitializable, 
+	If a data structure is StringInitializable,
 	it's Type can be passed into type-safe routing handlers.
 */
 extension User: StringInitializable {

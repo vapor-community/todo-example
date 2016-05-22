@@ -10,8 +10,11 @@
     "F1BC52561A710CF215ADD0AA3A71C2520A285287" : 0,
     "901D39F10963DCBC990E02C949E08901C0DDB8E3" : 0,
     "1E72C4C11736864B9AA36A7CE5A7583666A1B027" : 0,
+    "686ABC7D4D16AC8C2BF9FA66CA941F6EB6F984F7" : 0,
+    "6F592973CDAFC6396CA0DD0B7DAC14E5B55161D2" : 0,
     "23A93BD79D6F4162360D9B57530A0BAC7A3E8EEA" : 0,
     "AB3B39DF79E140C049FAA89F0028F2088162E212" : 0,
+    "4A88C7F5F6EA13C3C2A03CD1950D7F655F1E4F26" : 0,
     "287F3CCB1287376788CD8C8A6441419AFFC4A554" : 0,
     "10A2CB6C4392F0E306FF8D509BE5E88232276EA4" : 0,
     "BC4F18C8C7F08249E9651E82076CAED54BEAADF7" : 0,
@@ -26,8 +29,11 @@
     "F1BC52561A710CF215ADD0AA3A71C2520A285287" : "example\/Packages\/Data-0.4.9\/",
     "901D39F10963DCBC990E02C949E08901C0DDB8E3" : "example\/Packages\/InterchangeData-0.4.2\/",
     "1E72C4C11736864B9AA36A7CE5A7583666A1B027" : "example\/Packages\/SHA2-0.1.0\/",
+    "686ABC7D4D16AC8C2BF9FA66CA941F6EB6F984F7" : "vapor-example\/Packages\/BSON-2.3.1\/",
+    "6F592973CDAFC6396CA0DD0B7DAC14E5B55161D2" : "vapor-example\/Packages\/MongoKitten-0.9.2\/",
     "23A93BD79D6F4162360D9B57530A0BAC7A3E8EEA" : "example\/Packages\/Strand-1.1.0\/",
     "AB3B39DF79E140C049FAA89F0028F2088162E212" : "example\/Packages\/CryptoEssentials-0.2.1\/",
+    "4A88C7F5F6EA13C3C2A03CD1950D7F655F1E4F26" : "vapor-example\/Packages\/SHA1-0.7.0\/",
     "287F3CCB1287376788CD8C8A6441419AFFC4A554" : "example\/Packages\/HMAC-0.3.1\/",
     "10A2CB6C4392F0E306FF8D509BE5E88232276EA4" : "example\/Packages\/String-0.4.3\/",
     "BC4F18C8C7F08249E9651E82076CAED54BEAADF7" : "example\/Packages\/JSON-0.4.2\/",
@@ -64,9 +70,24 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "287F3CCB1287376788CD8C8A6441419AFFC4A554"
     },
     {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CryptoKitten\/SHA1.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4A88C7F5F6EA13C3C2A03CD1950D7F655F1E4F26"
+    },
+    {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/qutheory\/vapor-zewo-mustache.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4F6C23CD1048E3CB9DF672911A1E48E51B1B842D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PlanTeam\/BSON.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "686ABC7D4D16AC8C2BF9FA66CA941F6EB6F984F7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PlanTeam\/MongoKitten.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6F592973CDAFC6396CA0DD0B7DAC14E5B55161D2"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Zewo\/OS.git",

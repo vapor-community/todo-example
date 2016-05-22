@@ -36,9 +36,19 @@ class UserController: Controller {
         return user.makeJson()
     }
 
+    func modify(_ request: Request, item user: User) throws -> ResponseRepresentable {
+        return user.makeJson()
+    }
+
     func destroy(_ request: Request, item user: User) throws -> ResponseRepresentable {
         //User is ResponseRepresentable by proxy of JsonRepresentable
         return user
+    }
+    
+    func destroyAll(_ request: Request) throws -> ResponseRepresentable {
+        return Json([
+            "controller": "UserController.destroyAll"
+        ])
     }
 
 }

@@ -1,3 +1,4 @@
+import S4
 import Vapor
 
 let app = Application()
@@ -7,7 +8,7 @@ let app = Application()
 	view to any request to the root directory of the website.
 
 	Views referenced with `app.view` are by default assumed
-	to live in <workDir>/Resources/Views/ 
+	to live in <workDir>/Resources/Views/
 
 	You can override the working directory by passing
 	--workDir to the application upon execution.
@@ -21,7 +22,7 @@ app.get("/") { request in
 	any JSON data type (String, Int, Dict, etc)
 	in Json() and returning it.
 
-	Types can be made convertible to Json by 
+	Types can be made convertible to Json by
 	conforming to JsonRepresentable. The User
 	model included in this example demonstrates this.
 
@@ -44,7 +45,7 @@ app.get("json") { request in
 }
 
 /**
-	This route shows the various ways to access 
+	This route shows the various ways to access
 	request data with a manual (not type safe) route.
 
 	Visit "data/<some-string>" to view the output.
@@ -58,7 +59,7 @@ app.any("data/:id") { request in
 }
 
 /**
-	Here's an example of using type-safe routing to ensure 
+	Here's an example of using type-safe routing to ensure
 	only requests to "posts/<some-integer>" will be handled.
 
 	String is the most general and will match any request
@@ -67,7 +68,7 @@ app.any("data/:id") { request in
 
 	The User model included in this example is StringInitializable.
 */
-app.get("posts", Int.self) { request, postId in 
+app.get("posts", Int.self) { request, postId in
 	return "Requesting post with ID \(postId)"
 }
 
@@ -82,9 +83,11 @@ app.get("posts", Int.self) { request, postId in
 */
 app.resource("users", controller: UserController.self)
 
+app.resource("todos", controller: TodoController.self)
+
 /**
     A custom validator definining what
-    constitutes a valid name. Here it is 
+    constitutes a valid name. Here it is
     defined as an alphanumeric string that
     is between 5 and 20 characters.
 */
@@ -159,17 +162,17 @@ app.get("session") { request in
 }
 
 /**
-	Middleware is a great place to filter 
-	and modifying incoming requests and outgoing responses. 
+	Middleware is a great place to filter
+	and modifying incoming requests and outgoing responses.
 
 	Check out the middleware in App/Middelware.
 
 	You can also add middleware to a single route by
-	calling the routes inside of `app.middleware(MiddelwareType) { 
+	calling the routes inside of `app.middleware(MiddelwareType) {
 		app.get() { ... }
 	}`
 */
-app.middleware.append(SampleMiddleware())
+app.middleware.append(CorsMiddleware())
 
 // Print what link to visit for default port
 print("Visit http://localhost:8080")

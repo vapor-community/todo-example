@@ -17,7 +17,7 @@
             productRefGroup = ____Products_;
             projectDirPath = '';
             projectRoot = '';
-            targets = (______Target_C7, ______Target_S4, ______Target_String, ______Target_StructuredData, ______Target_JSON, ______Target_Strand, ______Target_Hummingbird, ______Target_CryptoEssentials, ______Target_HMAC, ______Target_SHA2, ______Target_MediaType, ______Target_Development, ______Target_Generator, ______Target_libc, ______Target_Performance, ______Target_Vapor, ______Target_App);
+            targets = (______Target_C7, ______Target_S4, ______Target_String, ______Target_PureJson, ______Target_Strand, ______Target_Hummingbird, ______Target_CryptoEssentials, ______Target_HMAC, ______Target_SHA2, ______Target_StructuredData, ______Target_MediaType, ______Target_PathIndexable, ______Target_Development, ______Target_Generator, ______Target_libc, ______Target_Performance, ______Target_Vapor, ______Target_MD5, ______Target_PBKDF2, ______Target_SCRAM, ______Target_BSON, ______Target_SHA1, ______Target_MongoKitten, ______Target_App);
         };
         '__PBXFileRef_Package.swift' = {
             isa = PBXFileReference;
@@ -34,131 +34,137 @@
         _______Group_C7 = {
             isa = PBXGroup;
             name = C7;
-            path = 'Packages/C7-0.7.0/Sources';
+            path = 'Packages/C7-0.7.3/Sources';
             sourceTree = '<group>';
-            children = ('__PBXFileRef_Packages/C7-0.7.0/Sources/AsyncConnection.swift', '__PBXFileRef_Packages/C7-0.7.0/Sources/AsyncHost.swift', '__PBXFileRef_Packages/C7-0.7.0/Sources/AsyncStream.swift', '__PBXFileRef_Packages/C7-0.7.0/Sources/AsyncURIConnection.swift', '__PBXFileRef_Packages/C7-0.7.0/Sources/Byte.swift', '__PBXFileRef_Packages/C7-0.7.0/Sources/C7.swift', '__PBXFileRef_Packages/C7-0.7.0/Sources/CaseInsensitiveString.swift', '__PBXFileRef_Packages/C7-0.7.0/Sources/Closable.swift', '__PBXFileRef_Packages/C7-0.7.0/Sources/Connection.swift', '__PBXFileRef_Packages/C7-0.7.0/Sources/CustomDataStore.swift', '__PBXFileRef_Packages/C7-0.7.0/Sources/Data.swift', '__PBXFileRef_Packages/C7-0.7.0/Sources/Drain.swift', '__PBXFileRef_Packages/C7-0.7.0/Sources/Host.swift', '__PBXFileRef_Packages/C7-0.7.0/Sources/Query.swift', '__PBXFileRef_Packages/C7-0.7.0/Sources/QueryField.swift', '__PBXFileRef_Packages/C7-0.7.0/Sources/Stream.swift', '__PBXFileRef_Packages/C7-0.7.0/Sources/StreamError.swift', '__PBXFileRef_Packages/C7-0.7.0/Sources/StreamSequence.swift', '__PBXFileRef_Packages/C7-0.7.0/Sources/Time.swift', '__PBXFileRef_Packages/C7-0.7.0/Sources/URI.swift', '__PBXFileRef_Packages/C7-0.7.0/Sources/URIConnection.swift');
+            children = ('__PBXFileRef_Packages/C7-0.7.3/Sources/AsyncConnection.swift', '__PBXFileRef_Packages/C7-0.7.3/Sources/AsyncDrain.swift', '__PBXFileRef_Packages/C7-0.7.3/Sources/AsyncHost.swift', '__PBXFileRef_Packages/C7-0.7.3/Sources/AsyncStream.swift', '__PBXFileRef_Packages/C7-0.7.3/Sources/AsyncURIConnection.swift', '__PBXFileRef_Packages/C7-0.7.3/Sources/Byte.swift', '__PBXFileRef_Packages/C7-0.7.3/Sources/C7.swift', '__PBXFileRef_Packages/C7-0.7.3/Sources/CaseInsensitiveString.swift', '__PBXFileRef_Packages/C7-0.7.3/Sources/Closable.swift', '__PBXFileRef_Packages/C7-0.7.3/Sources/Connection.swift', '__PBXFileRef_Packages/C7-0.7.3/Sources/CustomDataStore.swift', '__PBXFileRef_Packages/C7-0.7.3/Sources/Data.swift', '__PBXFileRef_Packages/C7-0.7.3/Sources/Drain.swift', '__PBXFileRef_Packages/C7-0.7.3/Sources/Host.swift', '__PBXFileRef_Packages/C7-0.7.3/Sources/Query.swift', '__PBXFileRef_Packages/C7-0.7.3/Sources/QueryField.swift', '__PBXFileRef_Packages/C7-0.7.3/Sources/Stream.swift', '__PBXFileRef_Packages/C7-0.7.3/Sources/StreamError.swift', '__PBXFileRef_Packages/C7-0.7.3/Sources/StreamSequence.swift', '__PBXFileRef_Packages/C7-0.7.3/Sources/Time.swift', '__PBXFileRef_Packages/C7-0.7.3/Sources/URI.swift', '__PBXFileRef_Packages/C7-0.7.3/Sources/URIConnection.swift');
         };
-        '__PBXFileRef_Packages/C7-0.7.0/Sources/AsyncConnection.swift' = {
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/AsyncConnection.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'AsyncConnection.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/C7-0.7.0/Sources/AsyncHost.swift' = {
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/AsyncDrain.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'AsyncDrain.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/AsyncHost.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'AsyncHost.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/C7-0.7.0/Sources/AsyncStream.swift' = {
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/AsyncStream.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'AsyncStream.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/C7-0.7.0/Sources/AsyncURIConnection.swift' = {
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/AsyncURIConnection.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'AsyncURIConnection.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/C7-0.7.0/Sources/Byte.swift' = {
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/Byte.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Byte.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/C7-0.7.0/Sources/C7.swift' = {
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/C7.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'C7.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/C7-0.7.0/Sources/CaseInsensitiveString.swift' = {
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/CaseInsensitiveString.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'CaseInsensitiveString.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/C7-0.7.0/Sources/Closable.swift' = {
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/Closable.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Closable.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/C7-0.7.0/Sources/Connection.swift' = {
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/Connection.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Connection.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/C7-0.7.0/Sources/CustomDataStore.swift' = {
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/CustomDataStore.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'CustomDataStore.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/C7-0.7.0/Sources/Data.swift' = {
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/Data.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Data.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/C7-0.7.0/Sources/Drain.swift' = {
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/Drain.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Drain.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/C7-0.7.0/Sources/Host.swift' = {
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/Host.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Host.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/C7-0.7.0/Sources/Query.swift' = {
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/Query.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Query.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/C7-0.7.0/Sources/QueryField.swift' = {
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/QueryField.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'QueryField.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/C7-0.7.0/Sources/Stream.swift' = {
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/Stream.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Stream.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/C7-0.7.0/Sources/StreamError.swift' = {
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/StreamError.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'StreamError.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/C7-0.7.0/Sources/StreamSequence.swift' = {
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/StreamSequence.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'StreamSequence.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/C7-0.7.0/Sources/Time.swift' = {
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/Time.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Time.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/C7-0.7.0/Sources/URI.swift' = {
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/URI.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'URI.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/C7-0.7.0/Sources/URIConnection.swift' = {
+        '__PBXFileRef_Packages/C7-0.7.3/Sources/URIConnection.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'URIConnection.swift';
@@ -183,7 +189,7 @@
         };
         CompilePhase_C7 = {
             isa = PBXSourcesBuildPhase;
-            files = ('__src_cc_ref_Packages/C7-0.7.0/Sources/AsyncConnection.swift', '__src_cc_ref_Packages/C7-0.7.0/Sources/AsyncHost.swift', '__src_cc_ref_Packages/C7-0.7.0/Sources/AsyncStream.swift', '__src_cc_ref_Packages/C7-0.7.0/Sources/AsyncURIConnection.swift', '__src_cc_ref_Packages/C7-0.7.0/Sources/Byte.swift', '__src_cc_ref_Packages/C7-0.7.0/Sources/C7.swift', '__src_cc_ref_Packages/C7-0.7.0/Sources/CaseInsensitiveString.swift', '__src_cc_ref_Packages/C7-0.7.0/Sources/Closable.swift', '__src_cc_ref_Packages/C7-0.7.0/Sources/Connection.swift', '__src_cc_ref_Packages/C7-0.7.0/Sources/CustomDataStore.swift', '__src_cc_ref_Packages/C7-0.7.0/Sources/Data.swift', '__src_cc_ref_Packages/C7-0.7.0/Sources/Drain.swift', '__src_cc_ref_Packages/C7-0.7.0/Sources/Host.swift', '__src_cc_ref_Packages/C7-0.7.0/Sources/Query.swift', '__src_cc_ref_Packages/C7-0.7.0/Sources/QueryField.swift', '__src_cc_ref_Packages/C7-0.7.0/Sources/Stream.swift', '__src_cc_ref_Packages/C7-0.7.0/Sources/StreamError.swift', '__src_cc_ref_Packages/C7-0.7.0/Sources/StreamSequence.swift', '__src_cc_ref_Packages/C7-0.7.0/Sources/Time.swift', '__src_cc_ref_Packages/C7-0.7.0/Sources/URI.swift', '__src_cc_ref_Packages/C7-0.7.0/Sources/URIConnection.swift');
+            files = ('__src_cc_ref_Packages/C7-0.7.3/Sources/AsyncConnection.swift', '__src_cc_ref_Packages/C7-0.7.3/Sources/AsyncDrain.swift', '__src_cc_ref_Packages/C7-0.7.3/Sources/AsyncHost.swift', '__src_cc_ref_Packages/C7-0.7.3/Sources/AsyncStream.swift', '__src_cc_ref_Packages/C7-0.7.3/Sources/AsyncURIConnection.swift', '__src_cc_ref_Packages/C7-0.7.3/Sources/Byte.swift', '__src_cc_ref_Packages/C7-0.7.3/Sources/C7.swift', '__src_cc_ref_Packages/C7-0.7.3/Sources/CaseInsensitiveString.swift', '__src_cc_ref_Packages/C7-0.7.3/Sources/Closable.swift', '__src_cc_ref_Packages/C7-0.7.3/Sources/Connection.swift', '__src_cc_ref_Packages/C7-0.7.3/Sources/CustomDataStore.swift', '__src_cc_ref_Packages/C7-0.7.3/Sources/Data.swift', '__src_cc_ref_Packages/C7-0.7.3/Sources/Drain.swift', '__src_cc_ref_Packages/C7-0.7.3/Sources/Host.swift', '__src_cc_ref_Packages/C7-0.7.3/Sources/Query.swift', '__src_cc_ref_Packages/C7-0.7.3/Sources/QueryField.swift', '__src_cc_ref_Packages/C7-0.7.3/Sources/Stream.swift', '__src_cc_ref_Packages/C7-0.7.3/Sources/StreamError.swift', '__src_cc_ref_Packages/C7-0.7.3/Sources/StreamSequence.swift', '__src_cc_ref_Packages/C7-0.7.3/Sources/Time.swift', '__src_cc_ref_Packages/C7-0.7.3/Sources/URI.swift', '__src_cc_ref_Packages/C7-0.7.3/Sources/URIConnection.swift');
             runOnlyForDeploymentPostprocessing = 0;
         };
         ___LinkPhase_C7 = {
@@ -191,89 +197,93 @@
             files = ();
             runOnlyForDeploymentPostprocessing = 0;
         };
-        '__src_cc_ref_Packages/C7-0.7.0/Sources/AsyncConnection.swift' = {
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/AsyncConnection.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/C7-0.7.0/Sources/AsyncConnection.swift';
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/AsyncConnection.swift';
         };
-        '__src_cc_ref_Packages/C7-0.7.0/Sources/AsyncHost.swift' = {
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/AsyncDrain.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/C7-0.7.0/Sources/AsyncHost.swift';
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/AsyncDrain.swift';
         };
-        '__src_cc_ref_Packages/C7-0.7.0/Sources/AsyncStream.swift' = {
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/AsyncHost.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/C7-0.7.0/Sources/AsyncStream.swift';
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/AsyncHost.swift';
         };
-        '__src_cc_ref_Packages/C7-0.7.0/Sources/AsyncURIConnection.swift' = {
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/AsyncStream.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/C7-0.7.0/Sources/AsyncURIConnection.swift';
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/AsyncStream.swift';
         };
-        '__src_cc_ref_Packages/C7-0.7.0/Sources/Byte.swift' = {
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/AsyncURIConnection.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/C7-0.7.0/Sources/Byte.swift';
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/AsyncURIConnection.swift';
         };
-        '__src_cc_ref_Packages/C7-0.7.0/Sources/C7.swift' = {
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/Byte.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/C7-0.7.0/Sources/C7.swift';
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/Byte.swift';
         };
-        '__src_cc_ref_Packages/C7-0.7.0/Sources/CaseInsensitiveString.swift' = {
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/C7.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/C7-0.7.0/Sources/CaseInsensitiveString.swift';
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/C7.swift';
         };
-        '__src_cc_ref_Packages/C7-0.7.0/Sources/Closable.swift' = {
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/CaseInsensitiveString.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/C7-0.7.0/Sources/Closable.swift';
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/CaseInsensitiveString.swift';
         };
-        '__src_cc_ref_Packages/C7-0.7.0/Sources/Connection.swift' = {
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/Closable.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/C7-0.7.0/Sources/Connection.swift';
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/Closable.swift';
         };
-        '__src_cc_ref_Packages/C7-0.7.0/Sources/CustomDataStore.swift' = {
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/Connection.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/C7-0.7.0/Sources/CustomDataStore.swift';
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/Connection.swift';
         };
-        '__src_cc_ref_Packages/C7-0.7.0/Sources/Data.swift' = {
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/CustomDataStore.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/C7-0.7.0/Sources/Data.swift';
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/CustomDataStore.swift';
         };
-        '__src_cc_ref_Packages/C7-0.7.0/Sources/Drain.swift' = {
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/Data.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/C7-0.7.0/Sources/Drain.swift';
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/Data.swift';
         };
-        '__src_cc_ref_Packages/C7-0.7.0/Sources/Host.swift' = {
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/Drain.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/C7-0.7.0/Sources/Host.swift';
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/Drain.swift';
         };
-        '__src_cc_ref_Packages/C7-0.7.0/Sources/Query.swift' = {
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/Host.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/C7-0.7.0/Sources/Query.swift';
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/Host.swift';
         };
-        '__src_cc_ref_Packages/C7-0.7.0/Sources/QueryField.swift' = {
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/Query.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/C7-0.7.0/Sources/QueryField.swift';
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/Query.swift';
         };
-        '__src_cc_ref_Packages/C7-0.7.0/Sources/Stream.swift' = {
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/QueryField.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/C7-0.7.0/Sources/Stream.swift';
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/QueryField.swift';
         };
-        '__src_cc_ref_Packages/C7-0.7.0/Sources/StreamError.swift' = {
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/Stream.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/C7-0.7.0/Sources/StreamError.swift';
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/Stream.swift';
         };
-        '__src_cc_ref_Packages/C7-0.7.0/Sources/StreamSequence.swift' = {
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/StreamError.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/C7-0.7.0/Sources/StreamSequence.swift';
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/StreamError.swift';
         };
-        '__src_cc_ref_Packages/C7-0.7.0/Sources/Time.swift' = {
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/StreamSequence.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/C7-0.7.0/Sources/Time.swift';
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/StreamSequence.swift';
         };
-        '__src_cc_ref_Packages/C7-0.7.0/Sources/URI.swift' = {
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/Time.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/C7-0.7.0/Sources/URI.swift';
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/Time.swift';
         };
-        '__src_cc_ref_Packages/C7-0.7.0/Sources/URIConnection.swift' = {
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/URI.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/C7-0.7.0/Sources/URIConnection.swift';
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/URI.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.7.3/Sources/URIConnection.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.7.3/Sources/URIConnection.swift';
         };
         _LinkFileRef_C7 = {
             isa = PBXBuildFile;
@@ -302,143 +312,143 @@
         _______Group_S4 = {
             isa = PBXGroup;
             name = S4;
-            path = 'Packages/S4-0.6.0/Sources';
+            path = 'Packages/S4-0.6.1/Sources';
             sourceTree = '<group>';
-            children = ('__PBXFileRef_Packages/S4-0.6.0/Sources/AsyncClient.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/AsyncMiddleware.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/AsyncResponder.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/AsyncServer.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/Body.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/Client.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/Error.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/Header.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/Headers.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/Message.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/Method.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/Middleware.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/Request.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/RequestParser.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/RequestSerializer.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/Responder.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/Response.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/ResponseParser.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/ResponseSerializer.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/S4.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/Server.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/Status.swift', '__PBXFileRef_Packages/S4-0.6.0/Sources/Version.swift');
+            children = ('__PBXFileRef_Packages/S4-0.6.1/Sources/AsyncClient.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/AsyncMiddleware.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/AsyncResponder.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/AsyncServer.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/Body.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/Client.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/Error.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/Header.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/Headers.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/Message.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/Method.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/Middleware.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/Request.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/RequestParser.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/RequestSerializer.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/Responder.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/Response.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/ResponseParser.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/ResponseSerializer.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/S4.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/Server.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/Status.swift', '__PBXFileRef_Packages/S4-0.6.1/Sources/Version.swift');
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/AsyncClient.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/AsyncClient.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'AsyncClient.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/AsyncMiddleware.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/AsyncMiddleware.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'AsyncMiddleware.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/AsyncResponder.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/AsyncResponder.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'AsyncResponder.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/AsyncServer.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/AsyncServer.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'AsyncServer.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/Body.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/Body.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Body.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/Client.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/Client.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Client.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/Error.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/Error.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Error.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/Header.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/Header.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Header.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/Headers.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/Headers.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Headers.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/Message.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/Message.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Message.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/Method.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/Method.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Method.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/Middleware.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/Middleware.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Middleware.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/Request.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/Request.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Request.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/RequestParser.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/RequestParser.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'RequestParser.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/RequestSerializer.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/RequestSerializer.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'RequestSerializer.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/Responder.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/Responder.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Responder.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/Response.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/Response.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Response.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/ResponseParser.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/ResponseParser.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'ResponseParser.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/ResponseSerializer.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/ResponseSerializer.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'ResponseSerializer.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/S4.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/S4.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'S4.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/Server.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/Server.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Server.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/Status.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/Status.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Status.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/S4-0.6.0/Sources/Version.swift' = {
+        '__PBXFileRef_Packages/S4-0.6.1/Sources/Version.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Version.swift';
@@ -463,7 +473,7 @@
         };
         CompilePhase_S4 = {
             isa = PBXSourcesBuildPhase;
-            files = ('__src_cc_ref_Packages/S4-0.6.0/Sources/AsyncClient.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/AsyncMiddleware.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/AsyncResponder.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/AsyncServer.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/Body.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/Client.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/Error.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/Header.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/Headers.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/Message.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/Method.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/Middleware.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/Request.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/RequestParser.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/RequestSerializer.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/Responder.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/Response.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/ResponseParser.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/ResponseSerializer.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/S4.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/Server.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/Status.swift', '__src_cc_ref_Packages/S4-0.6.0/Sources/Version.swift');
+            files = ('__src_cc_ref_Packages/S4-0.6.1/Sources/AsyncClient.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/AsyncMiddleware.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/AsyncResponder.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/AsyncServer.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/Body.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/Client.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/Error.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/Header.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/Headers.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/Message.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/Method.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/Middleware.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/Request.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/RequestParser.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/RequestSerializer.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/Responder.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/Response.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/ResponseParser.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/ResponseSerializer.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/S4.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/Server.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/Status.swift', '__src_cc_ref_Packages/S4-0.6.1/Sources/Version.swift');
             runOnlyForDeploymentPostprocessing = 0;
         };
         ___LinkPhase_S4 = {
@@ -471,97 +481,97 @@
             files = (_LinkFileRef_C7);
             runOnlyForDeploymentPostprocessing = 0;
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/AsyncClient.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/AsyncClient.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/AsyncClient.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/AsyncClient.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/AsyncMiddleware.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/AsyncMiddleware.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/AsyncMiddleware.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/AsyncMiddleware.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/AsyncResponder.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/AsyncResponder.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/AsyncResponder.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/AsyncResponder.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/AsyncServer.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/AsyncServer.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/AsyncServer.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/AsyncServer.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/Body.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/Body.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/Body.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/Body.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/Client.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/Client.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/Client.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/Client.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/Error.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/Error.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/Error.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/Error.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/Header.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/Header.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/Header.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/Header.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/Headers.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/Headers.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/Headers.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/Headers.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/Message.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/Message.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/Message.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/Message.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/Method.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/Method.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/Method.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/Method.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/Middleware.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/Middleware.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/Middleware.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/Middleware.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/Request.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/Request.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/Request.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/Request.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/RequestParser.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/RequestParser.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/RequestParser.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/RequestParser.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/RequestSerializer.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/RequestSerializer.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/RequestSerializer.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/RequestSerializer.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/Responder.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/Responder.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/Responder.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/Responder.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/Response.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/Response.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/Response.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/Response.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/ResponseParser.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/ResponseParser.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/ResponseParser.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/ResponseParser.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/ResponseSerializer.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/ResponseSerializer.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/ResponseSerializer.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/ResponseSerializer.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/S4.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/S4.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/S4.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/S4.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/Server.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/Server.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/Server.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/Server.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/Status.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/Status.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/Status.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/Status.swift';
         };
-        '__src_cc_ref_Packages/S4-0.6.0/Sources/Version.swift' = {
+        '__src_cc_ref_Packages/S4-0.6.1/Sources/Version.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/S4-0.6.0/Sources/Version.swift';
+            fileRef = '__PBXFileRef_Packages/S4-0.6.1/Sources/Version.swift';
         };
         _LinkFileRef_S4 = {
             isa = PBXBuildFile;
@@ -655,181 +665,113 @@
             isa = PBXTargetDependency;
             target = ______Target_String;
         };
-        _______Group_StructuredData = {
+        _______Group_PureJson = {
             isa = PBXGroup;
-            name = StructuredData;
-            path = 'Packages/StructuredData-0.7.0/Sources';
+            name = PureJson;
+            path = 'Packages/PureJson-2.0.0/Source';
             sourceTree = '<group>';
-            children = ('__PBXFileRef_Packages/StructuredData-0.7.0/Sources/StructuredData.swift');
+            children = ('__PBXFileRef_Packages/PureJson-2.0.0/Source/Json.swift', '__PBXFileRef_Packages/PureJson-2.0.0/Source/JsonParser.swift', '__PBXFileRef_Packages/PureJson-2.0.0/Source/JsonSerializer.swift', '__PBXFileRef_Packages/PureJson-2.0.0/Source/ParseError.swift', '__PBXFileRef_Packages/PureJson-2.0.0/Source/StringUtils.swift');
         };
-        '__PBXFileRef_Packages/StructuredData-0.7.0/Sources/StructuredData.swift' = {
+        '__PBXFileRef_Packages/PureJson-2.0.0/Source/Json.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
-            name = 'StructuredData.swift';
+            name = 'Json.swift';
             sourceTree = '<group>';
         };
-        ______Target_StructuredData = {
+        '__PBXFileRef_Packages/PureJson-2.0.0/Source/JsonParser.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'JsonParser.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/PureJson-2.0.0/Source/JsonSerializer.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'JsonSerializer.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/PureJson-2.0.0/Source/ParseError.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'ParseError.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/PureJson-2.0.0/Source/StringUtils.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'StringUtils.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_PureJson = {
             isa = PBXNativeTarget;
-            buildConfigurationList = _______Confs_StructuredData;
-            buildPhases = (CompilePhase_StructuredData, ___LinkPhase_StructuredData);
+            buildConfigurationList = _______Confs_PureJson;
+            buildPhases = (CompilePhase_PureJson, ___LinkPhase_PureJson);
             buildRules = ();
-            dependencies = (__Dependency_C7);
-            name = StructuredData;
-            productName = StructuredData;
-            productReference = _____Product_StructuredData;
+            dependencies = ();
+            name = PureJson;
+            productName = PureJson;
+            productReference = _____Product_PureJson;
             productType = 'com.apple.product-type.library.dynamic';
         };
-        _____Product_StructuredData = {
+        _____Product_PureJson = {
             isa = PBXFileReference;
             explicitFileType = 'compiled.mach-o.dylib';
-            path = 'StructuredData.dylib';
+            path = 'PureJson.dylib';
             sourceTree = BUILT_PRODUCTS_DIR;
         };
-        CompilePhase_StructuredData = {
+        CompilePhase_PureJson = {
             isa = PBXSourcesBuildPhase;
-            files = ('__src_cc_ref_Packages/StructuredData-0.7.0/Sources/StructuredData.swift');
+            files = ('__src_cc_ref_Packages/PureJson-2.0.0/Source/Json.swift', '__src_cc_ref_Packages/PureJson-2.0.0/Source/JsonParser.swift', '__src_cc_ref_Packages/PureJson-2.0.0/Source/JsonSerializer.swift', '__src_cc_ref_Packages/PureJson-2.0.0/Source/ParseError.swift', '__src_cc_ref_Packages/PureJson-2.0.0/Source/StringUtils.swift');
             runOnlyForDeploymentPostprocessing = 0;
         };
-        ___LinkPhase_StructuredData = {
+        ___LinkPhase_PureJson = {
             isa = PBXFrameworksBuildPhase;
-            files = (_LinkFileRef_C7);
+            files = ();
             runOnlyForDeploymentPostprocessing = 0;
         };
-        '__src_cc_ref_Packages/StructuredData-0.7.0/Sources/StructuredData.swift' = {
+        '__src_cc_ref_Packages/PureJson-2.0.0/Source/Json.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/StructuredData-0.7.0/Sources/StructuredData.swift';
+            fileRef = '__PBXFileRef_Packages/PureJson-2.0.0/Source/Json.swift';
         };
-        _LinkFileRef_StructuredData = {
+        '__src_cc_ref_Packages/PureJson-2.0.0/Source/JsonParser.swift' = {
             isa = PBXBuildFile;
-            fileRef = _____Product_StructuredData;
+            fileRef = '__PBXFileRef_Packages/PureJson-2.0.0/Source/JsonParser.swift';
         };
-        _______Confs_StructuredData = {
+        '__src_cc_ref_Packages/PureJson-2.0.0/Source/JsonSerializer.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/PureJson-2.0.0/Source/JsonSerializer.swift';
+        };
+        '__src_cc_ref_Packages/PureJson-2.0.0/Source/ParseError.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/PureJson-2.0.0/Source/ParseError.swift';
+        };
+        '__src_cc_ref_Packages/PureJson-2.0.0/Source/StringUtils.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/PureJson-2.0.0/Source/StringUtils.swift';
+        };
+        _LinkFileRef_PureJson = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_PureJson;
+        };
+        _______Confs_PureJson = {
             isa = XCConfigurationList;
-            buildConfigurations = (___DebugConf_StructuredData, _ReleaseConf_StructuredData);
+            buildConfigurations = (___DebugConf_PureJson, _ReleaseConf_PureJson);
             defaultConfigurationIsVisible = 0;
             defaultConfigurationName = Debug;
         };
-        ___DebugConf_StructuredData = {
+        ___DebugConf_PureJson = {
             isa = XCBuildConfiguration;
             buildSettings = { ENABLE_TESTABILITY = YES; SWIFT_OPTIMIZATION_LEVEL = -Onone; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; };
             name = Debug;
         };
-        _ReleaseConf_StructuredData = {
+        _ReleaseConf_PureJson = {
             isa = XCBuildConfiguration;
             buildSettings = { ENABLE_TESTABILITY = YES; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; };
             name = Release;
         };
-        __Dependency_StructuredData = {
+        __Dependency_PureJson = {
             isa = PBXTargetDependency;
-            target = ______Target_StructuredData;
-        };
-        _______Group_JSON = {
-            isa = PBXGroup;
-            name = JSON;
-            path = 'Packages/JSON-0.7.0/Source';
-            sourceTree = '<group>';
-            children = ('__PBXFileRef_Packages/JSON-0.7.0/Source/JSON.swift', '__PBXFileRef_Packages/JSON-0.7.0/Source/JSONInterchangeDataParser.swift', '__PBXFileRef_Packages/JSON-0.7.0/Source/JSONInterchangeDataSerializer.swift', '__PBXFileRef_Packages/JSON-0.7.0/Source/JSONParser.swift', '__PBXFileRef_Packages/JSON-0.7.0/Source/JSONSerializer.swift');
-        };
-        '__PBXFileRef_Packages/JSON-0.7.0/Source/JSON.swift' = {
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            name = 'JSON.swift';
-            sourceTree = '<group>';
-        };
-        '__PBXFileRef_Packages/JSON-0.7.0/Source/JSONInterchangeDataParser.swift' = {
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            name = 'JSONInterchangeDataParser.swift';
-            sourceTree = '<group>';
-        };
-        '__PBXFileRef_Packages/JSON-0.7.0/Source/JSONInterchangeDataSerializer.swift' = {
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            name = 'JSONInterchangeDataSerializer.swift';
-            sourceTree = '<group>';
-        };
-        '__PBXFileRef_Packages/JSON-0.7.0/Source/JSONParser.swift' = {
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            name = 'JSONParser.swift';
-            sourceTree = '<group>';
-        };
-        '__PBXFileRef_Packages/JSON-0.7.0/Source/JSONSerializer.swift' = {
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            name = 'JSONSerializer.swift';
-            sourceTree = '<group>';
-        };
-        ______Target_JSON = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = _______Confs_JSON;
-            buildPhases = (CompilePhase_JSON, ___LinkPhase_JSON);
-            buildRules = ();
-            dependencies = (__Dependency_C7, __Dependency_StructuredData);
-            name = JSON;
-            productName = JSON;
-            productReference = _____Product_JSON;
-            productType = 'com.apple.product-type.library.dynamic';
-        };
-        _____Product_JSON = {
-            isa = PBXFileReference;
-            explicitFileType = 'compiled.mach-o.dylib';
-            path = 'JSON.dylib';
-            sourceTree = BUILT_PRODUCTS_DIR;
-        };
-        CompilePhase_JSON = {
-            isa = PBXSourcesBuildPhase;
-            files = ('__src_cc_ref_Packages/JSON-0.7.0/Source/JSON.swift', '__src_cc_ref_Packages/JSON-0.7.0/Source/JSONInterchangeDataParser.swift', '__src_cc_ref_Packages/JSON-0.7.0/Source/JSONInterchangeDataSerializer.swift', '__src_cc_ref_Packages/JSON-0.7.0/Source/JSONParser.swift', '__src_cc_ref_Packages/JSON-0.7.0/Source/JSONSerializer.swift');
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        ___LinkPhase_JSON = {
-            isa = PBXFrameworksBuildPhase;
-            files = (_LinkFileRef_C7, _LinkFileRef_StructuredData);
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        '__src_cc_ref_Packages/JSON-0.7.0/Source/JSON.swift' = {
-            isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/JSON-0.7.0/Source/JSON.swift';
-        };
-        '__src_cc_ref_Packages/JSON-0.7.0/Source/JSONInterchangeDataParser.swift' = {
-            isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/JSON-0.7.0/Source/JSONInterchangeDataParser.swift';
-        };
-        '__src_cc_ref_Packages/JSON-0.7.0/Source/JSONInterchangeDataSerializer.swift' = {
-            isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/JSON-0.7.0/Source/JSONInterchangeDataSerializer.swift';
-        };
-        '__src_cc_ref_Packages/JSON-0.7.0/Source/JSONParser.swift' = {
-            isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/JSON-0.7.0/Source/JSONParser.swift';
-        };
-        '__src_cc_ref_Packages/JSON-0.7.0/Source/JSONSerializer.swift' = {
-            isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/JSON-0.7.0/Source/JSONSerializer.swift';
-        };
-        _LinkFileRef_JSON = {
-            isa = PBXBuildFile;
-            fileRef = _____Product_JSON;
-        };
-        _______Confs_JSON = {
-            isa = XCConfigurationList;
-            buildConfigurations = (___DebugConf_JSON, _ReleaseConf_JSON);
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Debug;
-        };
-        ___DebugConf_JSON = {
-            isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = YES; SWIFT_OPTIMIZATION_LEVEL = -Onone; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; };
-            name = Debug;
-        };
-        _ReleaseConf_JSON = {
-            isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = YES; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; };
-            name = Release;
-        };
-        __Dependency_JSON = {
-            isa = PBXTargetDependency;
-            target = ______Target_JSON;
+            target = ______Target_PureJson;
         };
         _______Group_Strand = {
             isa = PBXGroup;
@@ -1351,6 +1293,74 @@
             isa = PBXTargetDependency;
             target = ______Target_SHA2;
         };
+        _______Group_StructuredData = {
+            isa = PBXGroup;
+            name = StructuredData;
+            path = 'Packages/StructuredData-0.7.1/Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/StructuredData-0.7.1/Sources/StructuredData.swift');
+        };
+        '__PBXFileRef_Packages/StructuredData-0.7.1/Sources/StructuredData.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'StructuredData.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_StructuredData = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_StructuredData;
+            buildPhases = (CompilePhase_StructuredData, ___LinkPhase_StructuredData);
+            buildRules = ();
+            dependencies = (__Dependency_C7);
+            name = StructuredData;
+            productName = StructuredData;
+            productReference = _____Product_StructuredData;
+            productType = 'com.apple.product-type.library.dynamic';
+        };
+        _____Product_StructuredData = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.dylib';
+            path = 'StructuredData.dylib';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_StructuredData = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/StructuredData-0.7.1/Sources/StructuredData.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ___LinkPhase_StructuredData = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_C7);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/StructuredData-0.7.1/Sources/StructuredData.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/StructuredData-0.7.1/Sources/StructuredData.swift';
+        };
+        _LinkFileRef_StructuredData = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_StructuredData;
+        };
+        _______Confs_StructuredData = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_StructuredData, _ReleaseConf_StructuredData);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_StructuredData = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = YES; SWIFT_OPTIMIZATION_LEVEL = -Onone; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; };
+            name = Debug;
+        };
+        _ReleaseConf_StructuredData = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = YES; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; };
+            name = Release;
+        };
+        __Dependency_StructuredData = {
+            isa = PBXTargetDependency;
+            target = ______Target_StructuredData;
+        };
         _______Group_MediaType = {
             isa = PBXGroup;
             name = MediaType;
@@ -1419,32 +1429,110 @@
             isa = PBXTargetDependency;
             target = ______Target_MediaType;
         };
+        _______Group_PathIndexable = {
+            isa = PBXGroup;
+            name = PathIndexable;
+            path = 'Packages/PathIndexable-0.1.0/Sources/PathIndexable';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/PathIndexable-0.1.0/Sources/PathIndexable/PathIndexable+Subscripting.swift', '__PBXFileRef_Packages/PathIndexable-0.1.0/Sources/PathIndexable/PathIndexable.swift');
+        };
+        '__PBXFileRef_Packages/PathIndexable-0.1.0/Sources/PathIndexable/PathIndexable+Subscripting.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'PathIndexable+Subscripting.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/PathIndexable-0.1.0/Sources/PathIndexable/PathIndexable.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'PathIndexable.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_PathIndexable = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_PathIndexable;
+            buildPhases = (CompilePhase_PathIndexable, ___LinkPhase_PathIndexable);
+            buildRules = ();
+            dependencies = ();
+            name = PathIndexable;
+            productName = PathIndexable;
+            productReference = _____Product_PathIndexable;
+            productType = 'com.apple.product-type.library.dynamic';
+        };
+        _____Product_PathIndexable = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.dylib';
+            path = 'PathIndexable.dylib';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_PathIndexable = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/PathIndexable-0.1.0/Sources/PathIndexable/PathIndexable+Subscripting.swift', '__src_cc_ref_Packages/PathIndexable-0.1.0/Sources/PathIndexable/PathIndexable.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ___LinkPhase_PathIndexable = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/PathIndexable-0.1.0/Sources/PathIndexable/PathIndexable+Subscripting.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/PathIndexable-0.1.0/Sources/PathIndexable/PathIndexable+Subscripting.swift';
+        };
+        '__src_cc_ref_Packages/PathIndexable-0.1.0/Sources/PathIndexable/PathIndexable.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/PathIndexable-0.1.0/Sources/PathIndexable/PathIndexable.swift';
+        };
+        _LinkFileRef_PathIndexable = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_PathIndexable;
+        };
+        _______Confs_PathIndexable = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_PathIndexable, _ReleaseConf_PathIndexable);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_PathIndexable = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = YES; SWIFT_OPTIMIZATION_LEVEL = -Onone; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; };
+            name = Debug;
+        };
+        _ReleaseConf_PathIndexable = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = YES; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; };
+            name = Release;
+        };
+        __Dependency_PathIndexable = {
+            isa = PBXTargetDependency;
+            target = ______Target_PathIndexable;
+        };
         _______Group_Development = {
             isa = PBXGroup;
             name = Development;
-            path = 'Packages/Vapor-0.8.0/Sources/Development';
+            path = 'Packages/Vapor-0.11.0/Sources/Development';
             sourceTree = '<group>';
-            children = ('__PBXFileRef_Packages/Vapor-0.8.0/Sources/Development/main.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Development/Controllers/UserController.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Development/Middleware/AuthMiddleware.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Development/Models/User.swift');
+            children = ('__PBXFileRef_Packages/Vapor-0.11.0/Sources/Development/main.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Development/Controllers/UserController.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Development/Middleware/AuthMiddleware.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Development/Models/User.swift');
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Development/main.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Development/main.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'main.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Development/Controllers/UserController.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Development/Controllers/UserController.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Controllers/UserController.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Development/Middleware/AuthMiddleware.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Development/Middleware/AuthMiddleware.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Middleware/AuthMiddleware.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Development/Models/User.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Development/Models/User.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Models/User.swift';
@@ -1455,7 +1543,7 @@
             buildConfigurationList = _______Confs_Development;
             buildPhases = (CompilePhase_Development, ___LinkPhase_Development);
             buildRules = ();
-            dependencies = (__Dependency_CryptoEssentials, __Dependency_Strand, __Dependency_StructuredData, __Dependency_C7, __Dependency_MediaType, __Dependency_SHA2, __Dependency_HMAC, __Dependency_Hummingbird, __Dependency_JSON, __Dependency_String, __Dependency_S4, __Dependency_Vapor);
+            dependencies = (__Dependency_StructuredData, __Dependency_CryptoEssentials, __Dependency_Strand, __Dependency_C7, __Dependency_PathIndexable, __Dependency_MediaType, __Dependency_SHA2, __Dependency_HMAC, __Dependency_Hummingbird, __Dependency_PureJson, __Dependency_String, __Dependency_S4, __Dependency_Vapor);
             name = Development;
             productName = Development;
             productReference = _____Product_Development;
@@ -1469,29 +1557,29 @@
         };
         CompilePhase_Development = {
             isa = PBXSourcesBuildPhase;
-            files = ('__src_cc_ref_Packages/Vapor-0.8.0/Sources/Development/main.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Development/Controllers/UserController.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Development/Middleware/AuthMiddleware.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Development/Models/User.swift');
+            files = ('__src_cc_ref_Packages/Vapor-0.11.0/Sources/Development/main.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Development/Controllers/UserController.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Development/Middleware/AuthMiddleware.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Development/Models/User.swift');
             runOnlyForDeploymentPostprocessing = 0;
         };
         ___LinkPhase_Development = {
             isa = PBXFrameworksBuildPhase;
-            files = (_LinkFileRef_CryptoEssentials, _LinkFileRef_Strand, _LinkFileRef_StructuredData, _LinkFileRef_C7, _LinkFileRef_MediaType, _LinkFileRef_SHA2, _LinkFileRef_HMAC, _LinkFileRef_Hummingbird, _LinkFileRef_JSON, _LinkFileRef_String, _LinkFileRef_S4, _LinkFileRef_Vapor, _LinkFileRef_libc);
+            files = (_LinkFileRef_StructuredData, _LinkFileRef_CryptoEssentials, _LinkFileRef_Strand, _LinkFileRef_C7, _LinkFileRef_PathIndexable, _LinkFileRef_MediaType, _LinkFileRef_SHA2, _LinkFileRef_HMAC, _LinkFileRef_Hummingbird, _LinkFileRef_PureJson, _LinkFileRef_String, _LinkFileRef_S4, _LinkFileRef_Vapor, _LinkFileRef_libc);
             runOnlyForDeploymentPostprocessing = 0;
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Development/main.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Development/main.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Development/main.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Development/main.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Development/Controllers/UserController.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Development/Controllers/UserController.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Development/Controllers/UserController.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Development/Controllers/UserController.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Development/Middleware/AuthMiddleware.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Development/Middleware/AuthMiddleware.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Development/Middleware/AuthMiddleware.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Development/Middleware/AuthMiddleware.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Development/Models/User.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Development/Models/User.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Development/Models/User.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Development/Models/User.swift';
         };
         _LinkFileRef_Development = {
             isa = PBXBuildFile;
@@ -1520,11 +1608,11 @@
         _______Group_Generator = {
             isa = PBXGroup;
             name = Generator;
-            path = 'Packages/Vapor-0.8.0/Sources/Generator';
+            path = 'Packages/Vapor-0.11.0/Sources/Generator';
             sourceTree = '<group>';
-            children = ('__PBXFileRef_Packages/Vapor-0.8.0/Sources/Generator/main.swift');
+            children = ('__PBXFileRef_Packages/Vapor-0.11.0/Sources/Generator/main.swift');
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Generator/main.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Generator/main.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'main.swift';
@@ -1535,7 +1623,7 @@
             buildConfigurationList = _______Confs_Generator;
             buildPhases = (CompilePhase_Generator, ___LinkPhase_Generator);
             buildRules = ();
-            dependencies = (__Dependency_CryptoEssentials, __Dependency_Strand, __Dependency_StructuredData, __Dependency_C7, __Dependency_MediaType, __Dependency_SHA2, __Dependency_HMAC, __Dependency_Hummingbird, __Dependency_JSON, __Dependency_String, __Dependency_S4);
+            dependencies = (__Dependency_StructuredData, __Dependency_CryptoEssentials, __Dependency_Strand, __Dependency_C7, __Dependency_PathIndexable, __Dependency_MediaType, __Dependency_SHA2, __Dependency_HMAC, __Dependency_Hummingbird, __Dependency_PureJson, __Dependency_String, __Dependency_S4);
             name = Generator;
             productName = Generator;
             productReference = _____Product_Generator;
@@ -1549,17 +1637,17 @@
         };
         CompilePhase_Generator = {
             isa = PBXSourcesBuildPhase;
-            files = ('__src_cc_ref_Packages/Vapor-0.8.0/Sources/Generator/main.swift');
+            files = ('__src_cc_ref_Packages/Vapor-0.11.0/Sources/Generator/main.swift');
             runOnlyForDeploymentPostprocessing = 0;
         };
         ___LinkPhase_Generator = {
             isa = PBXFrameworksBuildPhase;
-            files = (_LinkFileRef_CryptoEssentials, _LinkFileRef_Strand, _LinkFileRef_StructuredData, _LinkFileRef_C7, _LinkFileRef_MediaType, _LinkFileRef_SHA2, _LinkFileRef_HMAC, _LinkFileRef_Hummingbird, _LinkFileRef_JSON, _LinkFileRef_String, _LinkFileRef_S4);
+            files = (_LinkFileRef_StructuredData, _LinkFileRef_CryptoEssentials, _LinkFileRef_Strand, _LinkFileRef_C7, _LinkFileRef_PathIndexable, _LinkFileRef_MediaType, _LinkFileRef_SHA2, _LinkFileRef_HMAC, _LinkFileRef_Hummingbird, _LinkFileRef_PureJson, _LinkFileRef_String, _LinkFileRef_S4);
             runOnlyForDeploymentPostprocessing = 0;
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Generator/main.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Generator/main.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Generator/main.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Generator/main.swift';
         };
         _LinkFileRef_Generator = {
             isa = PBXBuildFile;
@@ -1588,11 +1676,11 @@
         _______Group_libc = {
             isa = PBXGroup;
             name = libc;
-            path = 'Packages/Vapor-0.8.0/Sources/libc';
+            path = 'Packages/Vapor-0.11.0/Sources/libc';
             sourceTree = '<group>';
-            children = ('__PBXFileRef_Packages/Vapor-0.8.0/Sources/libc/libc.swift');
+            children = ('__PBXFileRef_Packages/Vapor-0.11.0/Sources/libc/libc.swift');
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/libc/libc.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/libc/libc.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'libc.swift';
@@ -1603,7 +1691,7 @@
             buildConfigurationList = _______Confs_libc;
             buildPhases = (CompilePhase_libc, ___LinkPhase_libc);
             buildRules = ();
-            dependencies = (__Dependency_CryptoEssentials, __Dependency_Strand, __Dependency_StructuredData, __Dependency_C7, __Dependency_MediaType, __Dependency_SHA2, __Dependency_HMAC, __Dependency_Hummingbird, __Dependency_JSON, __Dependency_String, __Dependency_S4);
+            dependencies = (__Dependency_StructuredData, __Dependency_CryptoEssentials, __Dependency_Strand, __Dependency_C7, __Dependency_PathIndexable, __Dependency_MediaType, __Dependency_SHA2, __Dependency_HMAC, __Dependency_Hummingbird, __Dependency_PureJson, __Dependency_String, __Dependency_S4);
             name = libc;
             productName = libc;
             productReference = _____Product_libc;
@@ -1617,17 +1705,17 @@
         };
         CompilePhase_libc = {
             isa = PBXSourcesBuildPhase;
-            files = ('__src_cc_ref_Packages/Vapor-0.8.0/Sources/libc/libc.swift');
+            files = ('__src_cc_ref_Packages/Vapor-0.11.0/Sources/libc/libc.swift');
             runOnlyForDeploymentPostprocessing = 0;
         };
         ___LinkPhase_libc = {
             isa = PBXFrameworksBuildPhase;
-            files = (_LinkFileRef_CryptoEssentials, _LinkFileRef_Strand, _LinkFileRef_StructuredData, _LinkFileRef_C7, _LinkFileRef_MediaType, _LinkFileRef_SHA2, _LinkFileRef_HMAC, _LinkFileRef_Hummingbird, _LinkFileRef_JSON, _LinkFileRef_String, _LinkFileRef_S4);
+            files = (_LinkFileRef_StructuredData, _LinkFileRef_CryptoEssentials, _LinkFileRef_Strand, _LinkFileRef_C7, _LinkFileRef_PathIndexable, _LinkFileRef_MediaType, _LinkFileRef_SHA2, _LinkFileRef_HMAC, _LinkFileRef_Hummingbird, _LinkFileRef_PureJson, _LinkFileRef_String, _LinkFileRef_S4);
             runOnlyForDeploymentPostprocessing = 0;
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/libc/libc.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/libc/libc.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/libc/libc.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/libc/libc.swift';
         };
         _LinkFileRef_libc = {
             isa = PBXBuildFile;
@@ -1656,11 +1744,11 @@
         _______Group_Performance = {
             isa = PBXGroup;
             name = Performance;
-            path = 'Packages/Vapor-0.8.0/Sources/Performance';
+            path = 'Packages/Vapor-0.11.0/Sources/Performance';
             sourceTree = '<group>';
-            children = ('__PBXFileRef_Packages/Vapor-0.8.0/Sources/Performance/main.swift');
+            children = ('__PBXFileRef_Packages/Vapor-0.11.0/Sources/Performance/main.swift');
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Performance/main.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Performance/main.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'main.swift';
@@ -1671,7 +1759,7 @@
             buildConfigurationList = _______Confs_Performance;
             buildPhases = (CompilePhase_Performance, ___LinkPhase_Performance);
             buildRules = ();
-            dependencies = (__Dependency_CryptoEssentials, __Dependency_Strand, __Dependency_StructuredData, __Dependency_C7, __Dependency_MediaType, __Dependency_SHA2, __Dependency_HMAC, __Dependency_Hummingbird, __Dependency_JSON, __Dependency_String, __Dependency_S4, __Dependency_Vapor);
+            dependencies = (__Dependency_StructuredData, __Dependency_CryptoEssentials, __Dependency_Strand, __Dependency_C7, __Dependency_PathIndexable, __Dependency_MediaType, __Dependency_SHA2, __Dependency_HMAC, __Dependency_Hummingbird, __Dependency_PureJson, __Dependency_String, __Dependency_S4, __Dependency_Vapor);
             name = Performance;
             productName = Performance;
             productReference = _____Product_Performance;
@@ -1685,17 +1773,17 @@
         };
         CompilePhase_Performance = {
             isa = PBXSourcesBuildPhase;
-            files = ('__src_cc_ref_Packages/Vapor-0.8.0/Sources/Performance/main.swift');
+            files = ('__src_cc_ref_Packages/Vapor-0.11.0/Sources/Performance/main.swift');
             runOnlyForDeploymentPostprocessing = 0;
         };
         ___LinkPhase_Performance = {
             isa = PBXFrameworksBuildPhase;
-            files = (_LinkFileRef_CryptoEssentials, _LinkFileRef_Strand, _LinkFileRef_StructuredData, _LinkFileRef_C7, _LinkFileRef_MediaType, _LinkFileRef_SHA2, _LinkFileRef_HMAC, _LinkFileRef_Hummingbird, _LinkFileRef_JSON, _LinkFileRef_String, _LinkFileRef_S4, _LinkFileRef_Vapor, _LinkFileRef_libc);
+            files = (_LinkFileRef_StructuredData, _LinkFileRef_CryptoEssentials, _LinkFileRef_Strand, _LinkFileRef_C7, _LinkFileRef_PathIndexable, _LinkFileRef_MediaType, _LinkFileRef_SHA2, _LinkFileRef_HMAC, _LinkFileRef_Hummingbird, _LinkFileRef_PureJson, _LinkFileRef_String, _LinkFileRef_S4, _LinkFileRef_Vapor, _LinkFileRef_libc);
             runOnlyForDeploymentPostprocessing = 0;
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Performance/main.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Performance/main.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Performance/main.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Performance/main.swift';
         };
         _LinkFileRef_Performance = {
             isa = PBXBuildFile;
@@ -1724,401 +1812,401 @@
         _______Group_Vapor = {
             isa = PBXGroup;
             name = Vapor;
-            path = 'Packages/Vapor-0.8.0/Sources/Vapor';
+            path = 'Packages/Vapor-0.11.0/Sources/Vapor';
             sourceTree = '<group>';
-            children = ('__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Config/Config.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Core/Abort.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Core/Application.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Core/Environment.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Core/Generated.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Core/Provider.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Event/Event.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Event/Subscription.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Fixes/FileManager.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Fixes/StringExtensions.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Hash/Hash.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Hash/HashDriver.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Hash/Int+Random.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Hash/SHAHasher.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/JSON/JSON.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Log/Log.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Log/LogDriver.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Middleware/AbortMiddleware.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Node/Node.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Node/NodeInitializable.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Process/Process.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Request/Request.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Request/RequestContent.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Response/Response.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Response/ResponseRepresentable.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Router/Branch.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Router/BranchRouter.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Router/RouterDriver.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Routing/Application+Route.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Routing/ApplicationInitializable.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Routing/Controller.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Routing/DefaultInitializable.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Routing/ResourceController.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Routing/Route.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Server/HTTPStream.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Server/HTTPStreamHeader.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Server/HTTPStreamServer.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Server/Vapor+Hummingbird.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Session/MemorySessionDriver.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Session/Session.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Session/SessionDriver.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Session/SessionMiddleware.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Utilities/Dispatch.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Utilities/Lock.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Utilities/ThreadSafeStore.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Utilities/Vapor+S4.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/And.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Error.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Node+Validation.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Not.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Operators.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Or.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Valid.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Validatable.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/ValidationMiddleware.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Validators.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/View/RenderDriver.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/View/View.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Alphanumeric.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Compare.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Contains.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Count.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Email.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/In.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Matches.swift', '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Unique.swift');
+            children = ('__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Config/Config.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Core/Abort.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Core/Application.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Core/Environment.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Core/Generated.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Core/Provider.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Event/Event.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Event/Subscription.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Fixes/FileManager.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Fixes/StringExtensions.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Hash/Hash.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Hash/HashDriver.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Hash/Int+Random.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Hash/SHAHasher.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/JSON/JSON.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Log/Log.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Log/LogDriver.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Middleware/AbortMiddleware.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Node/Node.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Node/NodeInitializable.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Process/Process.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Request/Request.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Request/RequestContent.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Response/Response.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Response/ResponseRepresentable.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Router/Branch.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Router/BranchRouter.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Router/RouterDriver.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Routing/Application+Route.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Routing/ApplicationInitializable.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Routing/Controller.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Routing/DefaultInitializable.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Routing/ResourceController.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Routing/Route.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Server/HTTPStream.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Server/HTTPStreamHeader.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Server/HTTPStreamServer.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Server/Vapor+Hummingbird.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Session/MemorySessionDriver.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Session/Session.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Session/SessionDriver.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Session/SessionMiddleware.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Utilities/Dispatch.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Utilities/Lock.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Utilities/ThreadSafeStore.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Utilities/Vapor+S4.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/And.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Error.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Node+Validation.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Not.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Operators.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Or.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Valid.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Validatable.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/ValidationMiddleware.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Validators.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/View/RenderDriver.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/View/View.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Alphanumeric.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Compare.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Contains.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Count.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Email.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/In.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Matches.swift', '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Unique.swift');
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Config/Config.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Config/Config.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Config/Config.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Core/Abort.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Core/Abort.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Core/Abort.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Core/Application.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Core/Application.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Core/Application.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Core/Environment.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Core/Environment.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Core/Environment.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Core/Generated.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Core/Generated.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Core/Generated.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Core/Provider.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Core/Provider.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Core/Provider.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Event/Event.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Event/Event.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Event/Event.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Event/Subscription.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Event/Subscription.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Event/Subscription.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Fixes/FileManager.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Fixes/FileManager.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Fixes/FileManager.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Fixes/StringExtensions.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Fixes/StringExtensions.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Fixes/StringExtensions.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Hash/Hash.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Hash/Hash.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Hash/Hash.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Hash/HashDriver.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Hash/HashDriver.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Hash/HashDriver.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Hash/Int+Random.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Hash/Int+Random.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Hash/Int+Random.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Hash/SHAHasher.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Hash/SHAHasher.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Hash/SHAHasher.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/JSON/JSON.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/JSON/JSON.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'JSON/JSON.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Log/Log.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Log/Log.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Log/Log.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Log/LogDriver.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Log/LogDriver.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Log/LogDriver.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Middleware/AbortMiddleware.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Middleware/AbortMiddleware.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Middleware/AbortMiddleware.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Node/Node.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Node/Node.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Node/Node.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Node/NodeInitializable.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Node/NodeInitializable.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Node/NodeInitializable.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Process/Process.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Process/Process.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Process/Process.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Request/Request.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Request/Request.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Request/Request.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Request/RequestContent.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Request/RequestContent.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Request/RequestContent.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Response/Response.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Response/Response.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Response/Response.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Response/ResponseRepresentable.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Response/ResponseRepresentable.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Response/ResponseRepresentable.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Router/Branch.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Router/Branch.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Router/Branch.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Router/BranchRouter.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Router/BranchRouter.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Router/BranchRouter.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Router/RouterDriver.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Router/RouterDriver.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Router/RouterDriver.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Routing/Application+Route.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Routing/Application+Route.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Routing/Application+Route.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Routing/ApplicationInitializable.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Routing/ApplicationInitializable.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Routing/ApplicationInitializable.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Routing/Controller.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Routing/Controller.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Routing/Controller.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Routing/DefaultInitializable.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Routing/DefaultInitializable.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Routing/DefaultInitializable.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Routing/ResourceController.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Routing/ResourceController.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Routing/ResourceController.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Routing/Route.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Routing/Route.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Routing/Route.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Server/HTTPStream.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Server/HTTPStream.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Server/HTTPStream.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Server/HTTPStreamHeader.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Server/HTTPStreamHeader.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Server/HTTPStreamHeader.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Server/HTTPStreamServer.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Server/HTTPStreamServer.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Server/HTTPStreamServer.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Server/Vapor+Hummingbird.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Server/Vapor+Hummingbird.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Server/Vapor+Hummingbird.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Session/MemorySessionDriver.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Session/MemorySessionDriver.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Session/MemorySessionDriver.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Session/Session.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Session/Session.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Session/Session.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Session/SessionDriver.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Session/SessionDriver.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Session/SessionDriver.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Session/SessionMiddleware.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Session/SessionMiddleware.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Session/SessionMiddleware.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Utilities/Dispatch.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Utilities/Dispatch.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Utilities/Dispatch.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Utilities/Lock.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Utilities/Lock.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Utilities/Lock.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Utilities/ThreadSafeStore.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Utilities/ThreadSafeStore.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Utilities/ThreadSafeStore.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Utilities/Vapor+S4.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Utilities/Vapor+S4.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Utilities/Vapor+S4.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/And.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/And.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Validation/And.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Error.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Error.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Validation/Error.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Node+Validation.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Node+Validation.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Validation/Node+Validation.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Not.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Not.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Validation/Not.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Operators.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Operators.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Validation/Operators.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Or.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Or.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Validation/Or.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Valid.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Valid.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Validation/Valid.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Validatable.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Validatable.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Validation/Validatable.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/ValidationMiddleware.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/ValidationMiddleware.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Validation/ValidationMiddleware.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Validators.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Validators.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Validation/Validators.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/View/RenderDriver.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/View/RenderDriver.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'View/RenderDriver.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/View/View.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/View/View.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'View/View.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Alphanumeric.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Alphanumeric.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Validation/Convenience/Alphanumeric.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Compare.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Compare.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Validation/Convenience/Compare.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Contains.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Contains.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Validation/Convenience/Contains.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Count.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Count.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Validation/Convenience/Count.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Email.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Email.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Validation/Convenience/Email.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/In.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/In.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Validation/Convenience/In.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Matches.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Matches.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Validation/Convenience/Matches.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Unique.swift' = {
+        '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Unique.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Validation/Convenience/Unique.swift';
@@ -2129,7 +2217,7 @@
             buildConfigurationList = _______Confs_Vapor;
             buildPhases = (CompilePhase_Vapor, ___LinkPhase_Vapor);
             buildRules = ();
-            dependencies = (__Dependency_CryptoEssentials, __Dependency_Strand, __Dependency_StructuredData, __Dependency_C7, __Dependency_MediaType, __Dependency_SHA2, __Dependency_HMAC, __Dependency_Hummingbird, __Dependency_JSON, __Dependency_String, __Dependency_S4, __Dependency_libc);
+            dependencies = (__Dependency_StructuredData, __Dependency_CryptoEssentials, __Dependency_Strand, __Dependency_C7, __Dependency_PathIndexable, __Dependency_MediaType, __Dependency_SHA2, __Dependency_HMAC, __Dependency_Hummingbird, __Dependency_PureJson, __Dependency_String, __Dependency_S4, __Dependency_libc);
             name = Vapor;
             productName = Vapor;
             productReference = _____Product_Vapor;
@@ -2143,277 +2231,277 @@
         };
         CompilePhase_Vapor = {
             isa = PBXSourcesBuildPhase;
-            files = ('__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Config/Config.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Core/Abort.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Core/Application.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Core/Environment.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Core/Generated.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Core/Provider.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Event/Event.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Event/Subscription.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Fixes/FileManager.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Fixes/StringExtensions.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Hash/Hash.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Hash/HashDriver.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Hash/Int+Random.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Hash/SHAHasher.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/JSON/JSON.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Log/Log.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Log/LogDriver.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Middleware/AbortMiddleware.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Node/Node.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Node/NodeInitializable.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Process/Process.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Request/Request.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Request/RequestContent.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Response/Response.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Response/ResponseRepresentable.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Router/Branch.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Router/BranchRouter.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Router/RouterDriver.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Routing/Application+Route.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Routing/ApplicationInitializable.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Routing/Controller.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Routing/DefaultInitializable.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Routing/ResourceController.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Routing/Route.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Server/HTTPStream.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Server/HTTPStreamHeader.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Server/HTTPStreamServer.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Server/Vapor+Hummingbird.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Session/MemorySessionDriver.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Session/Session.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Session/SessionDriver.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Session/SessionMiddleware.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Utilities/Dispatch.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Utilities/Lock.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Utilities/ThreadSafeStore.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Utilities/Vapor+S4.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/And.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Error.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Node+Validation.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Not.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Operators.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Or.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Valid.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Validatable.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/ValidationMiddleware.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Validators.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/View/RenderDriver.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/View/View.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Alphanumeric.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Compare.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Contains.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Count.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Email.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/In.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Matches.swift', '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Unique.swift');
+            files = ('__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Config/Config.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Core/Abort.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Core/Application.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Core/Environment.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Core/Generated.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Core/Provider.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Event/Event.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Event/Subscription.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Fixes/FileManager.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Fixes/StringExtensions.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Hash/Hash.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Hash/HashDriver.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Hash/Int+Random.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Hash/SHAHasher.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/JSON/JSON.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Log/Log.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Log/LogDriver.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Middleware/AbortMiddleware.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Node/Node.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Node/NodeInitializable.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Process/Process.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Request/Request.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Request/RequestContent.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Response/Response.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Response/ResponseRepresentable.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Router/Branch.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Router/BranchRouter.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Router/RouterDriver.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Routing/Application+Route.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Routing/ApplicationInitializable.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Routing/Controller.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Routing/DefaultInitializable.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Routing/ResourceController.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Routing/Route.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Server/HTTPStream.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Server/HTTPStreamHeader.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Server/HTTPStreamServer.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Server/Vapor+Hummingbird.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Session/MemorySessionDriver.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Session/Session.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Session/SessionDriver.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Session/SessionMiddleware.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Utilities/Dispatch.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Utilities/Lock.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Utilities/ThreadSafeStore.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Utilities/Vapor+S4.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/And.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Error.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Node+Validation.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Not.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Operators.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Or.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Valid.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Validatable.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/ValidationMiddleware.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Validators.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/View/RenderDriver.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/View/View.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Alphanumeric.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Compare.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Contains.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Count.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Email.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/In.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Matches.swift', '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Unique.swift');
             runOnlyForDeploymentPostprocessing = 0;
         };
         ___LinkPhase_Vapor = {
             isa = PBXFrameworksBuildPhase;
-            files = (_LinkFileRef_CryptoEssentials, _LinkFileRef_Strand, _LinkFileRef_StructuredData, _LinkFileRef_C7, _LinkFileRef_MediaType, _LinkFileRef_SHA2, _LinkFileRef_HMAC, _LinkFileRef_Hummingbird, _LinkFileRef_JSON, _LinkFileRef_String, _LinkFileRef_S4, _LinkFileRef_libc);
+            files = (_LinkFileRef_StructuredData, _LinkFileRef_CryptoEssentials, _LinkFileRef_Strand, _LinkFileRef_C7, _LinkFileRef_PathIndexable, _LinkFileRef_MediaType, _LinkFileRef_SHA2, _LinkFileRef_HMAC, _LinkFileRef_Hummingbird, _LinkFileRef_PureJson, _LinkFileRef_String, _LinkFileRef_S4, _LinkFileRef_libc);
             runOnlyForDeploymentPostprocessing = 0;
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Config/Config.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Config/Config.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Config/Config.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Config/Config.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Core/Abort.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Core/Abort.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Core/Abort.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Core/Abort.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Core/Application.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Core/Application.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Core/Application.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Core/Application.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Core/Environment.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Core/Environment.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Core/Environment.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Core/Environment.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Core/Generated.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Core/Generated.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Core/Generated.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Core/Generated.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Core/Provider.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Core/Provider.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Core/Provider.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Core/Provider.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Event/Event.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Event/Event.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Event/Event.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Event/Event.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Event/Subscription.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Event/Subscription.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Event/Subscription.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Event/Subscription.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Fixes/FileManager.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Fixes/FileManager.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Fixes/FileManager.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Fixes/FileManager.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Fixes/StringExtensions.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Fixes/StringExtensions.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Fixes/StringExtensions.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Fixes/StringExtensions.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Hash/Hash.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Hash/Hash.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Hash/Hash.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Hash/Hash.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Hash/HashDriver.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Hash/HashDriver.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Hash/HashDriver.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Hash/HashDriver.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Hash/Int+Random.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Hash/Int+Random.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Hash/Int+Random.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Hash/Int+Random.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Hash/SHAHasher.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Hash/SHAHasher.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Hash/SHAHasher.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Hash/SHAHasher.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/JSON/JSON.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/JSON/JSON.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/JSON/JSON.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/JSON/JSON.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Log/Log.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Log/Log.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Log/Log.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Log/Log.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Log/LogDriver.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Log/LogDriver.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Log/LogDriver.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Log/LogDriver.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Middleware/AbortMiddleware.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Middleware/AbortMiddleware.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Middleware/AbortMiddleware.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Middleware/AbortMiddleware.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Node/Node.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Node/Node.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Node/Node.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Node/Node.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Node/NodeInitializable.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Node/NodeInitializable.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Node/NodeInitializable.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Node/NodeInitializable.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Process/Process.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Process/Process.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Process/Process.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Process/Process.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Request/Request.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Request/Request.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Request/Request.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Request/Request.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Request/RequestContent.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Request/RequestContent.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Request/RequestContent.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Request/RequestContent.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Response/Response.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Response/Response.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Response/Response.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Response/Response.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Response/ResponseRepresentable.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Response/ResponseRepresentable.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Response/ResponseRepresentable.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Response/ResponseRepresentable.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Router/Branch.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Router/Branch.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Router/Branch.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Router/Branch.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Router/BranchRouter.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Router/BranchRouter.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Router/BranchRouter.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Router/BranchRouter.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Router/RouterDriver.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Router/RouterDriver.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Router/RouterDriver.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Router/RouterDriver.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Routing/Application+Route.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Routing/Application+Route.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Routing/Application+Route.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Routing/Application+Route.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Routing/ApplicationInitializable.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Routing/ApplicationInitializable.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Routing/ApplicationInitializable.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Routing/ApplicationInitializable.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Routing/Controller.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Routing/Controller.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Routing/Controller.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Routing/Controller.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Routing/DefaultInitializable.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Routing/DefaultInitializable.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Routing/DefaultInitializable.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Routing/DefaultInitializable.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Routing/ResourceController.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Routing/ResourceController.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Routing/ResourceController.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Routing/ResourceController.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Routing/Route.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Routing/Route.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Routing/Route.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Routing/Route.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Server/HTTPStream.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Server/HTTPStream.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Server/HTTPStream.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Server/HTTPStream.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Server/HTTPStreamHeader.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Server/HTTPStreamHeader.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Server/HTTPStreamHeader.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Server/HTTPStreamHeader.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Server/HTTPStreamServer.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Server/HTTPStreamServer.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Server/HTTPStreamServer.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Server/HTTPStreamServer.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Server/Vapor+Hummingbird.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Server/Vapor+Hummingbird.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Server/Vapor+Hummingbird.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Server/Vapor+Hummingbird.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Session/MemorySessionDriver.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Session/MemorySessionDriver.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Session/MemorySessionDriver.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Session/MemorySessionDriver.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Session/Session.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Session/Session.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Session/Session.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Session/Session.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Session/SessionDriver.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Session/SessionDriver.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Session/SessionDriver.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Session/SessionDriver.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Session/SessionMiddleware.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Session/SessionMiddleware.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Session/SessionMiddleware.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Session/SessionMiddleware.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Utilities/Dispatch.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Utilities/Dispatch.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Utilities/Dispatch.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Utilities/Dispatch.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Utilities/Lock.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Utilities/Lock.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Utilities/Lock.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Utilities/Lock.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Utilities/ThreadSafeStore.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Utilities/ThreadSafeStore.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Utilities/ThreadSafeStore.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Utilities/ThreadSafeStore.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Utilities/Vapor+S4.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Utilities/Vapor+S4.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Utilities/Vapor+S4.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Utilities/Vapor+S4.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/And.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/And.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/And.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/And.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Error.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Error.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Error.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Error.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Node+Validation.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Node+Validation.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Node+Validation.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Node+Validation.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Not.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Not.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Not.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Not.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Operators.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Operators.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Operators.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Operators.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Or.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Or.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Or.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Or.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Valid.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Valid.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Valid.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Valid.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Validatable.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Validatable.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Validatable.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Validatable.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/ValidationMiddleware.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/ValidationMiddleware.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/ValidationMiddleware.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/ValidationMiddleware.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Validators.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Validators.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Validators.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Validators.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/View/RenderDriver.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/View/RenderDriver.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/View/RenderDriver.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/View/RenderDriver.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/View/View.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/View/View.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/View/View.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/View/View.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Alphanumeric.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Alphanumeric.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Alphanumeric.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Alphanumeric.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Compare.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Compare.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Compare.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Compare.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Contains.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Contains.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Contains.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Contains.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Count.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Count.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Count.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Count.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Email.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Email.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Email.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Email.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/In.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/In.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/In.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/In.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Matches.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Matches.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Matches.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Matches.swift';
         };
-        '__src_cc_ref_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Unique.swift' = {
+        '__src_cc_ref_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Unique.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Vapor-0.8.0/Sources/Vapor/Validation/Convenience/Unique.swift';
+            fileRef = '__PBXFileRef_Packages/Vapor-0.11.0/Sources/Vapor/Validation/Convenience/Unique.swift';
         };
         _LinkFileRef_Vapor = {
             isa = PBXBuildFile;
@@ -2439,17 +2527,711 @@
             isa = PBXTargetDependency;
             target = ______Target_Vapor;
         };
+        _______Group_MD5 = {
+            isa = PBXGroup;
+            name = MD5;
+            path = 'Packages/MD5-0.7.1/Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/MD5-0.7.1/Sources/MD5.swift');
+        };
+        '__PBXFileRef_Packages/MD5-0.7.1/Sources/MD5.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'MD5.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_MD5 = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_MD5;
+            buildPhases = (CompilePhase_MD5, ___LinkPhase_MD5);
+            buildRules = ();
+            dependencies = (__Dependency_CryptoEssentials);
+            name = MD5;
+            productName = MD5;
+            productReference = _____Product_MD5;
+            productType = 'com.apple.product-type.library.dynamic';
+        };
+        _____Product_MD5 = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.dylib';
+            path = 'MD5.dylib';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_MD5 = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/MD5-0.7.1/Sources/MD5.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ___LinkPhase_MD5 = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_CryptoEssentials);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/MD5-0.7.1/Sources/MD5.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/MD5-0.7.1/Sources/MD5.swift';
+        };
+        _LinkFileRef_MD5 = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_MD5;
+        };
+        _______Confs_MD5 = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_MD5, _ReleaseConf_MD5);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_MD5 = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = YES; SWIFT_OPTIMIZATION_LEVEL = -Onone; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; };
+            name = Debug;
+        };
+        _ReleaseConf_MD5 = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = YES; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; };
+            name = Release;
+        };
+        __Dependency_MD5 = {
+            isa = PBXTargetDependency;
+            target = ______Target_MD5;
+        };
+        _______Group_PBKDF2 = {
+            isa = PBXGroup;
+            name = PBKDF2;
+            path = 'Packages/PBKDF2-0.7.0/Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/PBKDF2-0.7.0/Sources/PBKDF2.swift');
+        };
+        '__PBXFileRef_Packages/PBKDF2-0.7.0/Sources/PBKDF2.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'PBKDF2.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_PBKDF2 = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_PBKDF2;
+            buildPhases = (CompilePhase_PBKDF2, ___LinkPhase_PBKDF2);
+            buildRules = ();
+            dependencies = (__Dependency_CryptoEssentials, __Dependency_HMAC);
+            name = PBKDF2;
+            productName = PBKDF2;
+            productReference = _____Product_PBKDF2;
+            productType = 'com.apple.product-type.library.dynamic';
+        };
+        _____Product_PBKDF2 = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.dylib';
+            path = 'PBKDF2.dylib';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_PBKDF2 = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/PBKDF2-0.7.0/Sources/PBKDF2.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ___LinkPhase_PBKDF2 = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_CryptoEssentials, _LinkFileRef_HMAC);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/PBKDF2-0.7.0/Sources/PBKDF2.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/PBKDF2-0.7.0/Sources/PBKDF2.swift';
+        };
+        _LinkFileRef_PBKDF2 = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_PBKDF2;
+        };
+        _______Confs_PBKDF2 = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_PBKDF2, _ReleaseConf_PBKDF2);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_PBKDF2 = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = YES; SWIFT_OPTIMIZATION_LEVEL = -Onone; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; };
+            name = Debug;
+        };
+        _ReleaseConf_PBKDF2 = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = YES; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; };
+            name = Release;
+        };
+        __Dependency_PBKDF2 = {
+            isa = PBXTargetDependency;
+            target = ______Target_PBKDF2;
+        };
+        _______Group_SCRAM = {
+            isa = PBXGroup;
+            name = SCRAM;
+            path = 'Packages/SCRAM-0.7.0/Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/SCRAM-0.7.0/Sources/SCRAM.swift');
+        };
+        '__PBXFileRef_Packages/SCRAM-0.7.0/Sources/SCRAM.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'SCRAM.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_SCRAM = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_SCRAM;
+            buildPhases = (CompilePhase_SCRAM, ___LinkPhase_SCRAM);
+            buildRules = ();
+            dependencies = (__Dependency_CryptoEssentials, __Dependency_HMAC, __Dependency_PBKDF2);
+            name = SCRAM;
+            productName = SCRAM;
+            productReference = _____Product_SCRAM;
+            productType = 'com.apple.product-type.library.dynamic';
+        };
+        _____Product_SCRAM = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.dylib';
+            path = 'SCRAM.dylib';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_SCRAM = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/SCRAM-0.7.0/Sources/SCRAM.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ___LinkPhase_SCRAM = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_CryptoEssentials, _LinkFileRef_HMAC, _LinkFileRef_PBKDF2);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/SCRAM-0.7.0/Sources/SCRAM.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/SCRAM-0.7.0/Sources/SCRAM.swift';
+        };
+        _LinkFileRef_SCRAM = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_SCRAM;
+        };
+        _______Confs_SCRAM = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_SCRAM, _ReleaseConf_SCRAM);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_SCRAM = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = YES; SWIFT_OPTIMIZATION_LEVEL = -Onone; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; };
+            name = Debug;
+        };
+        _ReleaseConf_SCRAM = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = YES; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; };
+            name = Release;
+        };
+        __Dependency_SCRAM = {
+            isa = PBXTargetDependency;
+            target = ______Target_SCRAM;
+        };
+        _______Group_BSON = {
+            isa = PBXGroup;
+            name = BSON;
+            path = 'Packages/BSON-2.3.1/Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+LiteralConvertibles.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+Operators.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+SequenceType.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+Serialization.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Element.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Error.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Helpers.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/ObjectId.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Comparing.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Extraction.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+LiteralConvertibles.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Serialization.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Subscript.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value.swift', '__PBXFileRef_Packages/BSON-2.3.1/Sources/ValueConvertible.swift');
+        };
+        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+LiteralConvertibles.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Document+LiteralConvertibles.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+Operators.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Document+Operators.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+SequenceType.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Document+SequenceType.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+Serialization.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Document+Serialization.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Document.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Element.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Element.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Error.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Error.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Helpers.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Helpers.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/BSON-2.3.1/Sources/ObjectId.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'ObjectId.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Comparing.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Value+Comparing.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Extraction.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Value+Extraction.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+LiteralConvertibles.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Value+LiteralConvertibles.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Serialization.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Value+Serialization.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Subscript.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Value+Subscript.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Value.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/BSON-2.3.1/Sources/ValueConvertible.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'ValueConvertible.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_BSON = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_BSON;
+            buildPhases = (CompilePhase_BSON, ___LinkPhase_BSON);
+            buildRules = ();
+            dependencies = ();
+            name = BSON;
+            productName = BSON;
+            productReference = _____Product_BSON;
+            productType = 'com.apple.product-type.library.dynamic';
+        };
+        _____Product_BSON = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.dylib';
+            path = 'BSON.dylib';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_BSON = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/BSON-2.3.1/Sources/Document+LiteralConvertibles.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Document+Operators.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Document+SequenceType.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Document+Serialization.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Document.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Element.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Error.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Helpers.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/ObjectId.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value+Comparing.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value+Extraction.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value+LiteralConvertibles.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value+Serialization.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value+Subscript.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value.swift', '__src_cc_ref_Packages/BSON-2.3.1/Sources/ValueConvertible.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ___LinkPhase_BSON = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Document+LiteralConvertibles.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+LiteralConvertibles.swift';
+        };
+        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Document+Operators.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+Operators.swift';
+        };
+        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Document+SequenceType.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+SequenceType.swift';
+        };
+        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Document+Serialization.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document+Serialization.swift';
+        };
+        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Document.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Document.swift';
+        };
+        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Element.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Element.swift';
+        };
+        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Error.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Error.swift';
+        };
+        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Helpers.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Helpers.swift';
+        };
+        '__src_cc_ref_Packages/BSON-2.3.1/Sources/ObjectId.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/ObjectId.swift';
+        };
+        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value+Comparing.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Comparing.swift';
+        };
+        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value+Extraction.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Extraction.swift';
+        };
+        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value+LiteralConvertibles.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+LiteralConvertibles.swift';
+        };
+        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value+Serialization.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Serialization.swift';
+        };
+        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value+Subscript.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value+Subscript.swift';
+        };
+        '__src_cc_ref_Packages/BSON-2.3.1/Sources/Value.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/Value.swift';
+        };
+        '__src_cc_ref_Packages/BSON-2.3.1/Sources/ValueConvertible.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/BSON-2.3.1/Sources/ValueConvertible.swift';
+        };
+        _LinkFileRef_BSON = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_BSON;
+        };
+        _______Confs_BSON = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_BSON, _ReleaseConf_BSON);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_BSON = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = YES; SWIFT_OPTIMIZATION_LEVEL = -Onone; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; };
+            name = Debug;
+        };
+        _ReleaseConf_BSON = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = YES; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; };
+            name = Release;
+        };
+        __Dependency_BSON = {
+            isa = PBXTargetDependency;
+            target = ______Target_BSON;
+        };
+        _______Group_SHA1 = {
+            isa = PBXGroup;
+            name = SHA1;
+            path = 'Packages/SHA1-0.7.0/Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/SHA1-0.7.0/Sources/SHA1.swift');
+        };
+        '__PBXFileRef_Packages/SHA1-0.7.0/Sources/SHA1.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'SHA1.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_SHA1 = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_SHA1;
+            buildPhases = (CompilePhase_SHA1, ___LinkPhase_SHA1);
+            buildRules = ();
+            dependencies = (__Dependency_CryptoEssentials);
+            name = SHA1;
+            productName = SHA1;
+            productReference = _____Product_SHA1;
+            productType = 'com.apple.product-type.library.dynamic';
+        };
+        _____Product_SHA1 = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.dylib';
+            path = 'SHA1.dylib';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_SHA1 = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/SHA1-0.7.0/Sources/SHA1.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ___LinkPhase_SHA1 = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_CryptoEssentials);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/SHA1-0.7.0/Sources/SHA1.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/SHA1-0.7.0/Sources/SHA1.swift';
+        };
+        _LinkFileRef_SHA1 = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_SHA1;
+        };
+        _______Confs_SHA1 = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_SHA1, _ReleaseConf_SHA1);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_SHA1 = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = YES; SWIFT_OPTIMIZATION_LEVEL = -Onone; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; };
+            name = Debug;
+        };
+        _ReleaseConf_SHA1 = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = YES; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; };
+            name = Release;
+        };
+        __Dependency_SHA1 = {
+            isa = PBXTargetDependency;
+            target = ______Target_SHA1;
+        };
+        _______Group_MongoKitten = {
+            isa = PBXGroup;
+            name = MongoKitten;
+            path = 'Packages/MongoKitten-0.9.2/Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Collection.swift', '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Cursor.swift', '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Database.swift', '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Dispatch.swift', '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Flags.swift', '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/GridFS.swift', '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Helper.swift', '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Helpers.swift', '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Message.swift', '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/MongoError.swift', '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/OperationCode.swift', '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/QueryBuilder.swift', '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Server.swift', '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Socket.swift');
+        };
+        '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Collection.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Collection.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Cursor.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Cursor.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Database.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Database.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Dispatch.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Dispatch.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Flags.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Flags.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/GridFS.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'GridFS.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Helper.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Helper.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Helpers.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Helpers.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Message.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Message.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/MongoError.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'MongoError.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/OperationCode.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'OperationCode.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/QueryBuilder.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'QueryBuilder.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Server.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Server.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Socket.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Socket.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_MongoKitten = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_MongoKitten;
+            buildPhases = (CompilePhase_MongoKitten, ___LinkPhase_MongoKitten);
+            buildRules = ();
+            dependencies = (__Dependency_HMAC, __Dependency_PBKDF2, __Dependency_CryptoEssentials, __Dependency_Strand, __Dependency_SHA1, __Dependency_BSON, __Dependency_SCRAM, __Dependency_MD5);
+            name = MongoKitten;
+            productName = MongoKitten;
+            productReference = _____Product_MongoKitten;
+            productType = 'com.apple.product-type.library.dynamic';
+        };
+        _____Product_MongoKitten = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.dylib';
+            path = 'MongoKitten.dylib';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_MongoKitten = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/Collection.swift', '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/Cursor.swift', '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/Database.swift', '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/Dispatch.swift', '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/Flags.swift', '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/GridFS.swift', '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/Helper.swift', '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/Helpers.swift', '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/Message.swift', '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/MongoError.swift', '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/OperationCode.swift', '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/QueryBuilder.swift', '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/Server.swift', '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/Socket.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ___LinkPhase_MongoKitten = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_HMAC, _LinkFileRef_PBKDF2, _LinkFileRef_CryptoEssentials, _LinkFileRef_Strand, _LinkFileRef_SHA1, _LinkFileRef_BSON, _LinkFileRef_SCRAM, _LinkFileRef_MD5);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/Collection.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Collection.swift';
+        };
+        '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/Cursor.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Cursor.swift';
+        };
+        '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/Database.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Database.swift';
+        };
+        '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/Dispatch.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Dispatch.swift';
+        };
+        '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/Flags.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Flags.swift';
+        };
+        '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/GridFS.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/GridFS.swift';
+        };
+        '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/Helper.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Helper.swift';
+        };
+        '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/Helpers.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Helpers.swift';
+        };
+        '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/Message.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Message.swift';
+        };
+        '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/MongoError.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/MongoError.swift';
+        };
+        '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/OperationCode.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/OperationCode.swift';
+        };
+        '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/QueryBuilder.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/QueryBuilder.swift';
+        };
+        '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/Server.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Server.swift';
+        };
+        '__src_cc_ref_Packages/MongoKitten-0.9.2/Sources/Socket.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/MongoKitten-0.9.2/Sources/Socket.swift';
+        };
+        _LinkFileRef_MongoKitten = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_MongoKitten;
+        };
+        _______Confs_MongoKitten = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_MongoKitten, _ReleaseConf_MongoKitten);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_MongoKitten = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = YES; SWIFT_OPTIMIZATION_LEVEL = -Onone; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; };
+            name = Debug;
+        };
+        _ReleaseConf_MongoKitten = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = YES; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; };
+            name = Release;
+        };
+        __Dependency_MongoKitten = {
+            isa = PBXTargetDependency;
+            target = ______Target_MongoKitten;
+        };
         _______Group_App = {
             isa = PBXGroup;
             name = App;
             path = 'App';
             sourceTree = '<group>';
-            children = ('__PBXFileRef_App/main.swift', '__PBXFileRef_App/Controllers/UserController.swift', '__PBXFileRef_App/Middleware/SampleMiddleware.swift', '__PBXFileRef_App/Models/User.swift');
+            children = ('__PBXFileRef_App/main.swift', '__PBXFileRef_App/Controllers/TodoController.swift', '__PBXFileRef_App/Controllers/UserController.swift', '__PBXFileRef_App/Dao/MongoDaoBaseImpl.swift', '__PBXFileRef_App/Dao/TodoDao.swift', '__PBXFileRef_App/Dao/TodoDaoImpl.swift', '__PBXFileRef_App/Middleware/CorsMiddleware.swift', '__PBXFileRef_App/Middleware/SampleMiddleware.swift', '__PBXFileRef_App/Models/Todo.swift', '__PBXFileRef_App/Models/User.swift');
         };
         '__PBXFileRef_App/main.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'main.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_App/Controllers/TodoController.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Controllers/TodoController.swift';
             sourceTree = '<group>';
         };
         '__PBXFileRef_App/Controllers/UserController.swift' = {
@@ -2458,10 +3240,40 @@
             name = 'Controllers/UserController.swift';
             sourceTree = '<group>';
         };
+        '__PBXFileRef_App/Dao/MongoDaoBaseImpl.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Dao/MongoDaoBaseImpl.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_App/Dao/TodoDao.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Dao/TodoDao.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_App/Dao/TodoDaoImpl.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Dao/TodoDaoImpl.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_App/Middleware/CorsMiddleware.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Middleware/CorsMiddleware.swift';
+            sourceTree = '<group>';
+        };
         '__PBXFileRef_App/Middleware/SampleMiddleware.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Middleware/SampleMiddleware.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_App/Models/Todo.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Models/Todo.swift';
             sourceTree = '<group>';
         };
         '__PBXFileRef_App/Models/User.swift' = {
@@ -2475,7 +3287,7 @@
             buildConfigurationList = _______Confs_App;
             buildPhases = (CompilePhase_App, ___LinkPhase_App);
             buildRules = ();
-            dependencies = (__Dependency_CryptoEssentials, __Dependency_Strand, __Dependency_StructuredData, __Dependency_C7, __Dependency_MediaType, __Dependency_SHA2, __Dependency_HMAC, __Dependency_Hummingbird, __Dependency_JSON, __Dependency_String, __Dependency_S4, __Dependency_libc, __Dependency_Vapor);
+            dependencies = (__Dependency_PBKDF2, __Dependency_StructuredData, __Dependency_CryptoEssentials, __Dependency_C7, __Dependency_Strand, __Dependency_SHA1, __Dependency_BSON, __Dependency_SCRAM, __Dependency_MD5, __Dependency_PathIndexable, __Dependency_MediaType, __Dependency_SHA2, __Dependency_HMAC, __Dependency_Hummingbird, __Dependency_PureJson, __Dependency_String, __Dependency_S4, __Dependency_MongoKitten, __Dependency_libc, __Dependency_Vapor);
             name = App;
             productName = App;
             productReference = _____Product_App;
@@ -2489,25 +3301,49 @@
         };
         CompilePhase_App = {
             isa = PBXSourcesBuildPhase;
-            files = ('__src_cc_ref_App/main.swift', '__src_cc_ref_App/Controllers/UserController.swift', '__src_cc_ref_App/Middleware/SampleMiddleware.swift', '__src_cc_ref_App/Models/User.swift');
+            files = ('__src_cc_ref_App/main.swift', '__src_cc_ref_App/Controllers/TodoController.swift', '__src_cc_ref_App/Controllers/UserController.swift', '__src_cc_ref_App/Dao/MongoDaoBaseImpl.swift', '__src_cc_ref_App/Dao/TodoDao.swift', '__src_cc_ref_App/Dao/TodoDaoImpl.swift', '__src_cc_ref_App/Middleware/CorsMiddleware.swift', '__src_cc_ref_App/Middleware/SampleMiddleware.swift', '__src_cc_ref_App/Models/Todo.swift', '__src_cc_ref_App/Models/User.swift');
             runOnlyForDeploymentPostprocessing = 0;
         };
         ___LinkPhase_App = {
             isa = PBXFrameworksBuildPhase;
-            files = (_LinkFileRef_CryptoEssentials, _LinkFileRef_Strand, _LinkFileRef_StructuredData, _LinkFileRef_C7, _LinkFileRef_MediaType, _LinkFileRef_SHA2, _LinkFileRef_HMAC, _LinkFileRef_Hummingbird, _LinkFileRef_JSON, _LinkFileRef_String, _LinkFileRef_S4, _LinkFileRef_libc, _LinkFileRef_Vapor);
+            files = (_LinkFileRef_PBKDF2, _LinkFileRef_StructuredData, _LinkFileRef_CryptoEssentials, _LinkFileRef_C7, _LinkFileRef_Strand, _LinkFileRef_SHA1, _LinkFileRef_BSON, _LinkFileRef_SCRAM, _LinkFileRef_MD5, _LinkFileRef_PathIndexable, _LinkFileRef_MediaType, _LinkFileRef_SHA2, _LinkFileRef_HMAC, _LinkFileRef_Hummingbird, _LinkFileRef_PureJson, _LinkFileRef_String, _LinkFileRef_S4, _LinkFileRef_MongoKitten, _LinkFileRef_libc, _LinkFileRef_Vapor);
             runOnlyForDeploymentPostprocessing = 0;
         };
         '__src_cc_ref_App/main.swift' = {
             isa = PBXBuildFile;
             fileRef = '__PBXFileRef_App/main.swift';
         };
+        '__src_cc_ref_App/Controllers/TodoController.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_App/Controllers/TodoController.swift';
+        };
         '__src_cc_ref_App/Controllers/UserController.swift' = {
             isa = PBXBuildFile;
             fileRef = '__PBXFileRef_App/Controllers/UserController.swift';
         };
+        '__src_cc_ref_App/Dao/MongoDaoBaseImpl.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_App/Dao/MongoDaoBaseImpl.swift';
+        };
+        '__src_cc_ref_App/Dao/TodoDao.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_App/Dao/TodoDao.swift';
+        };
+        '__src_cc_ref_App/Dao/TodoDaoImpl.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_App/Dao/TodoDaoImpl.swift';
+        };
+        '__src_cc_ref_App/Middleware/CorsMiddleware.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_App/Middleware/CorsMiddleware.swift';
+        };
         '__src_cc_ref_App/Middleware/SampleMiddleware.swift' = {
             isa = PBXBuildFile;
             fileRef = '__PBXFileRef_App/Middleware/SampleMiddleware.swift';
+        };
+        '__src_cc_ref_App/Models/Todo.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_App/Models/Todo.swift';
         };
         '__src_cc_ref_App/Models/User.swift' = {
             isa = PBXBuildFile;
@@ -2552,19 +3388,19 @@
         };
         _____Sources_ = {
             isa = PBXGroup;
-            children = (_______Group_C7, _______Group_S4, _______Group_String, _______Group_StructuredData, _______Group_JSON, _______Group_Strand, _______Group_Hummingbird, _______Group_CryptoEssentials, _______Group_HMAC, _______Group_SHA2, _______Group_MediaType, _______Group_Development, _______Group_Generator, _______Group_libc, _______Group_Performance, _______Group_Vapor, _______Group_App);
+            children = (_______Group_C7, _______Group_S4, _______Group_String, _______Group_PureJson, _______Group_Strand, _______Group_Hummingbird, _______Group_CryptoEssentials, _______Group_HMAC, _______Group_SHA2, _______Group_StructuredData, _______Group_MediaType, _______Group_PathIndexable, _______Group_Development, _______Group_Generator, _______Group_libc, _______Group_Performance, _______Group_Vapor, _______Group_MD5, _______Group_PBKDF2, _______Group_SCRAM, _______Group_BSON, _______Group_SHA1, _______Group_MongoKitten, _______Group_App);
             name = Sources;
             sourceTree = '<group>';
         };
         Dependencies_ = {
             isa = PBXGroup;
-            children = (_______Group_C7, _______Group_S4, _______Group_String, _______Group_StructuredData, _______Group_JSON, _______Group_Strand, _______Group_Hummingbird, _______Group_CryptoEssentials, _______Group_HMAC, _______Group_SHA2, _______Group_MediaType, _______Group_Development, _______Group_Generator, _______Group_libc, _______Group_Performance, _______Group_Vapor);
+            children = (_______Group_C7, _______Group_S4, _______Group_String, _______Group_PureJson, _______Group_Strand, _______Group_Hummingbird, _______Group_CryptoEssentials, _______Group_HMAC, _______Group_SHA2, _______Group_StructuredData, _______Group_MediaType, _______Group_PathIndexable, _______Group_Development, _______Group_Generator, _______Group_libc, _______Group_Performance, _______Group_Vapor, _______Group_MD5, _______Group_PBKDF2, _______Group_SCRAM, _______Group_BSON, _______Group_SHA1, _______Group_MongoKitten);
             name = Dependencies;
             sourceTree = '<group>';
         };
         ____Products_ = {
             isa = PBXGroup;
-            children = (_____Product_C7, _____Product_S4, _____Product_String, _____Product_StructuredData, _____Product_JSON, _____Product_Strand, _____Product_Hummingbird, _____Product_CryptoEssentials, _____Product_HMAC, _____Product_SHA2, _____Product_MediaType, _____Product_Development, _____Product_Generator, _____Product_libc, _____Product_Performance, _____Product_Vapor, _____Product_App);
+            children = (_____Product_C7, _____Product_S4, _____Product_String, _____Product_PureJson, _____Product_Strand, _____Product_Hummingbird, _____Product_CryptoEssentials, _____Product_HMAC, _____Product_SHA2, _____Product_StructuredData, _____Product_MediaType, _____Product_PathIndexable, _____Product_Development, _____Product_Generator, _____Product_libc, _____Product_Performance, _____Product_Vapor, _____Product_MD5, _____Product_PBKDF2, _____Product_SCRAM, _____Product_BSON, _____Product_SHA1, _____Product_MongoKitten, _____Product_App);
             name = Products;
             sourceTree = '<group>';
         };
