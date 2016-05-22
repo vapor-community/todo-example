@@ -2,7 +2,7 @@
 
 [Vapor](https://github.com/qutheory/vapor) is a Swift backend framework to build server-side applications in Swift.
 
-[TodoBackend][http://www.todobackend.com] is a proof-of-concept catalog to demonstrate the implementation of the same simple API using different backend frameworks.
+[TodoBackend](http://www.todobackend.com) is a proof-of-concept catalog to demonstrate the implementation of the same simple API using different backend frameworks.
 
 This project is a TodoBackend implementation using Vapor, Swift and MongoDB as a backend stack.
 
