@@ -72,8 +72,20 @@ class TodoController: Controller {
     }
 
     func update(_ request: Request, item todo: Todo) throws -> ResponseRepresentable {
-        //Todo is JsonRepresentable
-        return todo.makeJson()
+        if let todoDao = todoDao {
+            if let id = todo.id, title = request.data["title"]?.string, completed = request.data["completed"]?.bool, order = request.data["order"]?.int {
+                let todoToUpdate = Todo(id: id, title: title, completed: completed, order: order)
+                if let updatedTodo = todoDao.updateTodo(todoToUpdate) {
+                    return updatedTodo
+                } else {
+                    throw Abort.notFound
+                }
+            } else {
+                throw Abort.badRequest
+            }
+        } else {
+            throw Abort.internalServerError
+        }
     }
     
     func modify(_ request: Request, item todo: Todo) throws -> ResponseRepresentable {

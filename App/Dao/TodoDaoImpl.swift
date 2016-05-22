@@ -104,4 +104,21 @@ class TodoDaoImpl: MongoDaoBaseImpl, TodoDao {
             
         }
     }
+    
+    func updateTodo(_ todo: Todo) -> Todo? {
+        do {
+            if let id = todo.id {
+                try self.collection.update(matching: "_id" == ObjectId(id), to: todo.makeBson())
+                if let todoDocument = try self.collection.findOne(matching: "_id" == ObjectId(id)) {
+                    return try Todo(fromBson: todoDocument)
+                } else {
+                    return nil
+                }
+            } else {
+                return nil
+            }
+        } catch {
+            return nil
+        }
+    }
 }
