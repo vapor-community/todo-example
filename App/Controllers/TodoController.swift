@@ -20,7 +20,8 @@ class TodoController: Controller {
         if let todoDao = todoDao {
             if let todos = todoDao.findAllTodos() {
                 return Json.array(todos.map({ (todo:Todo) -> Json in
-                    todo.makeJson()
+                    todo.url = "http://\(request.uri.host!)/todos/\(todo.id!)"
+                    return todo.makeJson()
                 }))
             } else {
                 throw Abort.internalServerError
@@ -42,6 +43,7 @@ class TodoController: Controller {
                 completed = false
             }
             if let todo = todoDao.createTodo(Todo(id: nil, title: title, completed: completed, order: request.data["order"].int)){
+                todo.url = "http://\(request.uri.host!)/todos/\(todo.id!)"
                 return todo
             } else {
                 throw Abort.internalServerError
@@ -59,6 +61,7 @@ class TodoController: Controller {
         if let todoDao = todoDao {
             if let id = todo.id {
                 if let todo = todoDao.getTodoWithId(id) {
+                    todo.url = "http://\(request.uri.host!)/todos/\(todo.id!)"
                     return todo
                 } else {
                     throw Abort.notFound
@@ -76,6 +79,7 @@ class TodoController: Controller {
             if let id = todo.id, title = request.data["title"]?.string, completed = request.data["completed"]?.bool, order = request.data["order"]?.int {
                 let todoToUpdate = Todo(id: id, title: title, completed: completed, order: order)
                 if let updatedTodo = todoDao.updateTodo(todoToUpdate) {
+                    updatedTodo.url = "http://\(request.uri.host!)/todos/\(updatedTodo.id!)"
                     return updatedTodo
                 } else {
                     throw Abort.notFound
@@ -94,6 +98,7 @@ class TodoController: Controller {
                 var changes:[String:AnyObject] = [String:AnyObject]()
                 if let title = request.data["title"]?.string as? AnyObject {
                     changes["title"] = title
+                    Log.info("Changing title of todo \(todo.id) to '\(title)'")
                 }
                 if let completed = request.data["completed"]?.bool as? AnyObject {
                     changes["completed"] = completed
@@ -102,6 +107,7 @@ class TodoController: Controller {
                     changes["order"] = order
                 }
                 if let updatedTodo = todoDao.modifyTodoWithId(id, changes: changes) {
+                    updatedTodo.url = "http://\(request.uri.host!)/todos/\(updatedTodo.id!)"
                     return updatedTodo
                 } else {
                     throw Abort.notFound

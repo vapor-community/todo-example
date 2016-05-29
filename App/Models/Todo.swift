@@ -6,14 +6,7 @@ final class Todo {
     var title: String?
     var completed: Bool = false
     var order:Int?
-    
-    var url:String? {
-        if let id = id {
-            return "http://localhost:8080/todos/\(id)"
-        } else {
-            return nil
-        }
-    }
+    var url:String?
     
     init(id:String? = nil, title:String? = nil, completed:Bool = false, order:Int? = nil) {
         self.title = title
@@ -40,7 +33,6 @@ extension Todo: JsonRepresentable {
         if let title = title {
             json["title"] = .string(title)
         }
-        
         if let order = order {
             json["order"] = .number(Double(order))
         }
@@ -60,7 +52,8 @@ extension Todo: StringInitializable {
 
 extension Todo {
     convenience init?(fromBson bson:Document) throws {
-        self.init(id:bson["_id"].string, title: bson["title"].string, completed: bson["completed"].bool, order:bson["order"].int)
+        let todoId = bson["_id"].string
+        self.init(id:todoId, title: bson["title"].string, completed: bson["completed"].bool, order:bson["order"].int)
     }
     
     func makeBson() -> Document {
