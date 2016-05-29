@@ -13,7 +13,7 @@ protocol TodoDao {
     func findAllTodos() -> [Todo]?;
     func deleteAllTodos();
     func getTodoWithId(_ id:String) -> Todo?;
-    func modifyTodoWithId(_ id:String, changes:[String:AnyObject]) -> Todo?;
+    func modifyTodoWithId(_ id:String, changes:[String:Any]) -> Todo?;
     func deleteTodoWithId(_ id:String)
     func updateTodo(_ todo:Todo) -> Todo?
 }

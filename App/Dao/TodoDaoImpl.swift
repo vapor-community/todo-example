@@ -73,7 +73,7 @@ class TodoDaoImpl: TodoDao {
         }
     }
 
-    func modifyTodoWithId(_ id: String, changes: [String : AnyObject]) -> Todo? {
+    func modifyTodoWithId(_ id: String, changes: [String : Any]) -> Todo? {
         do {
             if var todoDocument = try self.collection.findOne(matching: "_id" == ObjectId(id)) {
                 if let title = changes["title"] as? String {

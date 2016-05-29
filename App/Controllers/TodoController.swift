@@ -95,15 +95,15 @@ class TodoController: Controller {
     func modify(_ request: Request, item todo: Todo) throws -> ResponseRepresentable {
         if let todoDao = todoDao {
             if let id = todo.id {
-                var changes:[String:AnyObject] = [String:AnyObject]()
-                if let title = request.data["title"]?.string as? AnyObject {
+                var changes:[String:Any] = [String:Any]()
+                if let title = request.data["title"]?.string {
                     changes["title"] = title
-                    Log.info("Changing title of todo \(todo.id) to '\(title)'")
+                    Log.info("Changing title of todo \(todo.id!) to '\(title)'")
                 }
-                if let completed = request.data["completed"]?.bool as? AnyObject {
+                if let completed = request.data["completed"]?.bool {
                     changes["completed"] = completed
                 }
-                if let order = request.data["order"]?.int as? AnyObject {
+                if let order = request.data["order"]?.int {
                     changes["order"] = order
                 }
                 if let updatedTodo = todoDao.modifyTodoWithId(id, changes: changes) {
