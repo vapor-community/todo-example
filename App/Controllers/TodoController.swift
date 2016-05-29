@@ -92,14 +92,14 @@ class TodoController: Controller {
         if let todoDao = todoDao {
             if let id = todo.id {
                 var changes:[String:AnyObject] = [String:AnyObject]()
-                if let title = request.data["title"] {
-                    changes["title"] = title.string
+                if let title = request.data["title"]?.string as? AnyObject {
+                    changes["title"] = title
                 }
-                if let completed = request.data["completed"] {
-                    changes["completed"] = completed.bool
+                if let completed = request.data["completed"]?.bool as? AnyObject {
+                    changes["completed"] = completed
                 }
-                if let order = request.data["order"] {
-                    changes["order"] = order.int
+                if let order = request.data["order"]?.int as? AnyObject {
+                    changes["order"] = order
                 }
                 if let updatedTodo = todoDao.modifyTodoWithId(id, changes: changes) {
                     return updatedTodo

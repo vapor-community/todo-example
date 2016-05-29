@@ -182,51 +182,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "______Target_Development"
-               BuildableName = "Development"
-               BlueprintName = "Development"
-               ReferencedContainer = "container:VaporApp.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "______Target_Generator"
-               BuildableName = "Generator"
-               BlueprintName = "Generator"
-               ReferencedContainer = "container:VaporApp.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "______Target_libc"
                BuildableName = "libc.dylib"
                BlueprintName = "libc"
-               ReferencedContainer = "container:VaporApp.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "______Target_Performance"
-               BuildableName = "Performance"
-               BlueprintName = "Performance"
                ReferencedContainer = "container:VaporApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -8,6 +8,7 @@
 
 import Foundation
 import MongoKitten
+import Vapor
 
 class TodoDaoImpl: TodoDao {
     let collectionName = "todos"
@@ -28,10 +29,10 @@ class TodoDaoImpl: TodoDao {
             let todoDocument = try self.collection.insert(documentToInsert)
             return try Todo(fromBson:todoDocument)
         } catch MongoError.InsertFailure(documents: _, error: let error) {
-            NSLog("Could not insert todo because " + (error?["errmsg"].string)!)
+            Log.error("Could not insert todo because " + (error?["errmsg"].string)!)
             return nil
         } catch {
-            NSLog("Error converting todo to BSON")
+            Log.error("Error converting todo to BSON")
             return nil
         }
     }
