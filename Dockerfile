@@ -39,4 +39,4 @@ EXPOSE 8080
 # mount in local sources via:  -v $(PWD):/vapor
 # the vapor CLI command does this
 
-CMD swift build && .build/debug/App
+CMD git clone https://github.com/sarbogast/vapor-todobackend.git && cd vapor-todobackend && swift build && .build/debug/App
