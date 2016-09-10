@@ -7,9 +7,9 @@
 //
 
 import Foundation
-import MongoKitten
+//import MongoKitten
 import Vapor
-
+/*
 enum MongoRepositoryError:ErrorProtocol {
     case CouldNotConnect
 }
@@ -33,3 +33,4 @@ class MongoRepository {
         Log.info("Database connection created")
     }
 }
+ */

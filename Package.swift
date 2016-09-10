@@ -3,14 +3,14 @@ import PackageDescription
 let package = Package(
     name: "VaporApp",
     dependencies: [
-        .Package(url: "https://github.com/sarbogast/vapor.git", majorVersion: 0, minor: 12),
-        .Package(url: "https://github.com/PlanTeam/MongoKitten.git", majorVersion: 0, minor: 9),
+        .Package(url: "https://github.com/vapor/vapor.git", majorVersion: 0, minor: 18),
+        .Package(url: "https://github.com/vapor/mysql-provider.git", majorVersion: 0, minor: 6),
     ],
     exclude: [
         "Deploy",
         "Public",
         "Resources",
-		"Tests",
-		"Database"
+		    "Tests",
+		    "Database"
     ]
 )

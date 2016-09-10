@@ -1,5 +1,5 @@
 import Vapor
-
+/*
 class TodoController: Controller {
     typealias Item = Todo
     
@@ -76,7 +76,7 @@ class TodoController: Controller {
 
     func update(_ request: Request, item todo: Todo) throws -> ResponseRepresentable {
         if let todoDao = todoDao {
-            if let id = todo.id, title = request.data["title"]?.string, completed = request.data["completed"]?.bool, order = request.data["order"]?.int {
+            if let id = todo.id, let title = request.data["title"]?.string, let completed = request.data["completed"]?.bool, let order = request.data["order"]?.int {
                 let todoToUpdate = Todo(id: id, title: title, completed: completed, order: order)
                 if let updatedTodo = todoDao.updateTodo(todoToUpdate) {
                     updatedTodo.url = "http://\(request.uri.host!)/todos/\(updatedTodo.id!)"
@@ -142,3 +142,4 @@ class TodoController: Controller {
         }
     }
 }
+*/

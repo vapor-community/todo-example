@@ -1,7 +1,9 @@
-import S4
 import Vapor
+import HTTP
+import VaporMySQL
 
-let app = Application()
+let app = Droplet(providers: [VaporMySQL.Provider.self])
+app.middleware.append(CorsMiddleware())
 
 /**
 	This first route will return the welcome.html
@@ -13,13 +15,9 @@ let app = Application()
 	You can override the working directory by passing
 	--workDir to the application upon execution.
 */
-app.get("/") { request in
-	return try app.view("welcome.html")
-}
-
-app.get("tests") { request in
-    return try app.view("todo-backend-tests.html")
-}
+app.get { _ in try app.view.make("welcome.html") }
+app.get("tests") { _ in try app.view.make("todo-backend-tests.html") }
+app.get("todos") { _ in return JSON([:]) }
 
 /**
 	This will set up the appropriate GET, PUT, and POST
@@ -30,7 +28,7 @@ app.get("tests") { request in
 	defined by which StringInitializable class they choose
 	to receive as parameters to their functions.
 */
-app.resource("todos", controller: TodoController.self)
+// app.resource("todos", controller: TodoController.self)
 
 /**
 	Middleware is a great place to filter
@@ -43,7 +41,7 @@ app.resource("todos", controller: TodoController.self)
 		app.get() { ... }
 	}`
 */
-app.middleware.append(CorsMiddleware())
+// app.middleware.append(CorsMiddleware())
 
 // Print what link to visit for default port
-app.start(port: 8080)
+app.serve()

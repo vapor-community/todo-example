@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+/*
 protocol TodoDao {
     func createTodo(_ todo:Todo) -> Todo?;
     func findAllTodos() -> [Todo]?;
@@ -16,4 +16,4 @@ protocol TodoDao {
     func modifyTodoWithId(_ id:String, changes:[String:Any]) -> Todo?;
     func deleteTodoWithId(_ id:String)
     func updateTodo(_ todo:Todo) -> Todo?
-}
+}*/
