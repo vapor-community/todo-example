@@ -1,12 +1,3 @@
-//
-//  CorsMiddleware.swift
-//  VaporApp
-//
-//  Created by Sebastien Arbogast on 15/05/2016.
-//
-//
-
-import Vapor
 import HTTP
 
 class CorsMiddleware: Middleware {

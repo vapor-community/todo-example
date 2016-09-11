@@ -1,7 +1,5 @@
 import Vapor
-import HTTP
 import VaporMySQL
-import MySQL
 
 let drop = Droplet(preparations: [Todo.self], providers: [VaporMySQL.Provider.self])
 drop.middleware.append(CorsMiddleware())

@@ -1,8 +1,5 @@
 import HTTP
 import Vapor
-import MySQL
-import FluentMySQL
-import Fluent
 
 final class TodoController: ResourceRepresentable {
 
@@ -34,7 +31,7 @@ final class TodoController: ResourceRepresentable {
     func update(request: Request, existing: Todo) throws -> ResponseRepresentable {
         var new = try request.todo()
         new.merge(existing: existing)
-        try Todo.query().createOrModify(new.makeNode())
+        try new.update()
         return try new.makeJson(with: request)
     }
 
@@ -91,5 +88,11 @@ extension Todo {
         id = id ?? existing.id
         // completed is always self
         order = order ?? existing.order
+    }
+}
+
+extension Todo {
+    func update() throws {
+        try Todo.query().createOrModify(makeNode())
     }
 }

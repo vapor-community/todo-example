@@ -36,7 +36,6 @@ extension Todo: Preparation {
             users.string("title", optional: true)
             users.bool("completed")
             users.int("order", optional: true)
-
         }
     }
 
