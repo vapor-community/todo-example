@@ -18,7 +18,8 @@ $('#target-chooser input').on('keyup',function(){
 
 
 targetRootUrl = window.location.protocol + "//" + window.location.hostname;
-if (window.location.port !== null) {
+var portString = "" + window.location.port
+if (portString.length > 0) {
     targetRootUrl += ":" + window.location.port;
 }
 targetRootUrl += "/todos";
