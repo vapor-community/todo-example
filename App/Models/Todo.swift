@@ -4,15 +4,15 @@ import Fluent
 struct Todo: Model {
     var id: Node?
 
-    var title: String?
+    var title: String
     var completed: Bool
     var order: Int?
 }
 
 extension Todo: NodeConvertible {
-    init(node: Node, in context: Context) {
+    init(node: Node, in context: Context) throws {
         id = node["id"]
-        title = node["title"]?.string
+        title = try node.extract("title")
         completed = node["completed"]?.bool ?? false
         order = node["order"]?.int
     }

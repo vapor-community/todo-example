@@ -11,7 +11,11 @@ extension Todo {
         }
         var node = try makeNode()
         // TODO: Header "Origin"?
-        guard let origin = request.headers["Origin"]?.finished(with: "/") else { throw Abort.notFound }
+        guard var origin = request.headers["Origin"] else { throw Abort.notFound }
+        if origin.hasSuffix(":") {
+            origin = String(origin.characters.dropLast())
+        }
+        origin = origin.finished(with: "/")
         node["url"] = "\(origin)todos/\(id)".makeNode()
         return try node.converted()
     }
