@@ -1,0 +1,19 @@
+{
+  "name": "Todo",
+  "description": "A todobackend.com implementation",
+  "logo": "https://pbs.twimg.com/profile_images/760551690902900737/9vosg_bf.jpg",
+  "repository": "https://github.com/vapor/todo-example",
+  "keywords": ["swift", "vapor", "slack", "todo", "backend", "todobackend"],
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+    "jawsdb"
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/vapor/heroku-buildpack"
+    }
+  ]
+}

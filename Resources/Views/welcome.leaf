@@ -1,0 +1,19 @@
+#extend("base")
+
+#export("head") {
+    <title>Vapor</title>
+
+    <link rel="stylesheet" href="styles/app.css">
+}
+
+#export("body") {
+    <div class="wrapper">
+        <h1 id="logo">Vapor</h1>
+
+        <nav class="main">
+            <ul>
+                <li><a href="tests">View spec tests</a></li>
+            </ul>
+        </nav>
+    </div>
+}
