@@ -10,12 +10,9 @@ extension Todo {
             throw Abort.notFound
         }
         var node = try makeNode()
-        var authority = request.uri.host
-        if let port = request.uri.port {
-            authority += ":\(port)"
-        }
         // TODO: Header "Origin"?
-        node["url"] = "\(request.uri.scheme)://\(authority)/todos/\(id)".makeNode()
+        guard let origin = request.headers["Origin"]?.finished(with: "/") else { throw Abort.notFound }
+        node["url"] = "\(origin)todos/\(id)".makeNode()
         return try node.converted()
     }
 }
