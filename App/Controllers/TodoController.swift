@@ -6,17 +6,24 @@ import FluentMySQL
 var count = 0
 extension Todo {
     func makeJson(with request: Request) throws -> JSON {
-        guard let id = id?.string else {
+        let node = try makeNode()
+        return try node.makeJson(with: request)
+//        
+//        // TODO: Header "Origin"?
+//        guard let host = request.headers["Host"]?.finished(with: "/") else { throw Abort.notFound }
+//        node["url"] = "\(request.uri.scheme)://\(host)todos/\(id)".makeNode()
+//        return try node.converted()
+    }
+}
+
+extension Node {
+    func makeJson(with request: Request) throws -> JSON {
+        guard let id = self["id"]?.string else {
             throw Abort.notFound
         }
-        var node = try makeNode()
-        // TODO: Header "Origin"?
-        guard var origin = request.headers["Origin"] else { throw Abort.notFound }
-        if origin.hasSuffix(":") {
-            origin = String(origin.characters.dropLast())
-        }
-        origin = origin.finished(with: "/")
-        node["url"] = "\(origin)todos/\(id)".makeNode()
+        guard let host = request.headers["Host"]?.finished(with: "/") else { throw Abort.notFound }
+        var node = self
+        node["url"] = "\(request.uri.scheme)://\(host)todos/\(id)".makeNode()
         return try node.converted()
     }
 }
@@ -24,24 +31,46 @@ extension Todo {
 extension Todo {
     mutating func merge(existing: Todo) {
         id = id ?? existing.id
-        title = title ?? existing.title
         // completed is always self
         order = order ?? existing.order
     }
 }
 
 final class TodoController: ResourceRepresentable {
+//    let db: MySQL.Database
+//    init(_ db: MySQL.Database) {
+//        self.db = db
+//    }
+
     func index(request: Request) throws -> ResponseRepresentable {
         let json = try Todo.all().map { try $0.makeJson(with: request) }
         return JSON(json)
     }
 
     func create(request: Request) throws -> ResponseRepresentable {
+
+
         guard
             var todo = try request.json.flatMap({ try Todo(node: $0) })
             else {
                 throw Abort.notFound
             }
+//
+//        guard let driver = Todo.database?.driver as? MySQLDriver else { fatalError() }
+//        let db = driver.database
+//        let entry = "INSERT INTO \(Todo.entity) (title, completed) VALUES(?, ?, ?);"
+//        do {
+//            let result = try db.execute("INSERT INTO \(Todo.entity) (title, completed) VALUES('HERE IS TITLE', 1)").map { Node($0) }
+//            //let result = try db.execute(entry, [todo.title, todo.completed, todo.order.flatMap({ Node($0) }) ?? 0]).map { Node($0) }
+//            print("Result: \(result)")
+//            return try result.first?.makeJson(with: request) ?? "FUDGE"
+//        } catch {
+//            print("Error: \(error)")
+//            return ""
+//        }
+//
+//
+
         try todo.save()
         return try todo.makeJson(with: request)
     }

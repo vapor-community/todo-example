@@ -17,7 +17,13 @@ $('#target-chooser input').on('keyup',function(){
 });
 
 
-targetRootUrl = window.location.protocol + "//" + window.location.hostname + ":" + window.location.port + "/todos";
+targetRootUrl = window.location.protocol + "//" + window.location.hostname;
+if (window.location.port !== null) {
+    targetRootUrl += ":" + window.location.port;
+}
+targetRootUrl += "/todos";
+
+// targetRootUrl = window.location.protocol + "//" + window.location.hostname + ":" + window.location.port + "/todos";
 
 if( targetRootUrl ){
   $("#target-info .target-url").text(targetRootUrl);

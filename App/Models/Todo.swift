@@ -18,6 +18,7 @@ extension Todo: NodeConvertible {
     }
 
     func makeNode() throws -> Node {
+        defer { print("Made node") }
         return try Node.init(node:
             [
                 "id": id,
