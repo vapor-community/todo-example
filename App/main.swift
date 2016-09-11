@@ -2,7 +2,7 @@ import Vapor
 import HTTP
 import VaporMySQL
 
-let app = Droplet(providers: [VaporMySQL.Provider.self])
+let app = Droplet(preparations: [Todo.self], providers: [VaporMySQL.Provider.self])
 app.middleware.append(CorsMiddleware())
 
 /**
@@ -17,8 +17,7 @@ app.middleware.append(CorsMiddleware())
 */
 app.get { _ in try app.view.make("welcome.html") }
 app.get("tests") { _ in try app.view.make("todo-backend-tests.html") }
-app.get("todos") { _ in return JSON([:]) }
-
+app.resource("todos", TodoController())
 /**
 	This will set up the appropriate GET, PUT, and POST
 	routes for basic CRUD operations. Check out the

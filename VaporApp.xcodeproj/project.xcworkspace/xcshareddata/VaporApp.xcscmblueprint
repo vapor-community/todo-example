@@ -41,7 +41,7 @@
     "23A93BD79D6F4162360D9B57530A0BAC7A3E8EEA" : "example\/Packages\/Strand-1.1.0\/",
     "10A2CB6C4392F0E306FF8D509BE5E88232276EA4" : "example\/Packages\/String-0.4.3\/",
     "BC4F18C8C7F08249E9651E82076CAED54BEAADF7" : "example\/Packages\/JSON-0.4.2\/",
-    "AA4F32B25933CAAA5857EA2080FE655A951C6324" : "todo\/",
+    "AA4F32B25933CAAA5857EA2080FE655A951C6324" : "vapor-example\/",
     "704B817219E4CBC31AA92368EF54A4E2835A8C3D" : "example\/Packages\/OperatingSystem-0.4.2\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "VaporApp",

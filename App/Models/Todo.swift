@@ -1,4 +1,57 @@
 import Vapor
+import Fluent
+
+struct Todo: Model {
+    var id: Node?
+
+    var title: String?
+    let completed: Bool
+    let order: Int?
+    var url: String?
+}
+
+extension Todo: NodeConvertible {
+    init(node: Node, in context: Context) {
+        id = node["id"]
+        title = node["title"]?.string
+        completed = node["completed"]?.bool ?? false
+        order = node["order"]?.int
+        url = node["url"]?.string
+    }
+
+    func makeNode() throws -> Node {
+        var node = try Node.init(node:
+            [
+                "id": id,
+                "title": title,
+                "completed": completed,
+                "order": order,
+                "url": url
+            ]
+        )
+
+        print(node.nodeObject)
+        return node
+    }
+}
+
+extension Todo: Preparation {
+    static func prepare(_ database: Database) throws {
+        try database.create("todos") { users in
+            users.id()
+            users.string("title", optional: true)
+            users.bool("completed")
+            users.int("order", optional: true)
+            users.string("url", optional: true)
+
+        }
+    }
+
+    static func revert(_ database: Database) throws {
+        fatalError("unimplemented")
+    }
+}
+
 /*
 import MongoKitten
 */

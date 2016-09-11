@@ -1,4 +1,100 @@
+import HTTP
 import Vapor
+import MySQL
+import FluentMySQL
+
+var count = 0
+extension Todo {
+    func makeJson(with request: Request) throws -> JSON {
+        guard let id = id?.string else {
+            throw Abort.notFound
+        }
+        var node = try makeNode()
+        var authority = request.uri.host
+        if let port = request.uri.port {
+            authority += ":\(port)"
+        }
+        node["url"] = "\(request.uri.scheme)://\(authority)/todos/\(id)".makeNode()
+        return try node.converted()
+    }
+}
+
+final class TodoController: ResourceRepresentable {
+    func index(request: Request) throws -> ResponseRepresentable {
+        let json = try Todo.all().map { try $0.makeJson(with: request) }
+        return JSON(json)
+    }
+
+    func create(request: Request) throws -> ResponseRepresentable {
+        print("Create: \(try request.body.bytes?.string())")
+        guard
+            var todo = try request.json.flatMap({ try Todo(node: $0) })
+            else {
+                throw Abort.notFound
+            }
+
+        todo.title = todo.title.flatMap { $0 + "**\(count)" }
+
+        print("Saving: \(todo)")
+        try todo.save()
+        return try todo.makeJson(with: request)
+    }
+
+    func show(request: Request, todo: Todo) throws -> ResponseRepresentable {
+        return try todo.makeJson(with: request)
+    }
+
+    func delete(request: Request, todo: Todo) throws -> ResponseRepresentable {
+        try todo.delete()
+        return JSON([:])
+    }
+
+    func clear(request: Request) throws -> ResponseRepresentable {
+        try Todo.query().delete()
+/*
+        guard let driver = Todo.database?.driver as? MySQLDriver else {
+            throw Abort.notFound
+        }
+        try driver.database.execute("DELETE FROM \(Todo.entity)")
+    */
+        return JSON([])
+    }
+
+    func update(request: Request, todo: Todo) throws -> ResponseRepresentable {
+        print("Request: \(request.description)")
+        print("")
+        return "whoops"
+    }
+
+    func makeResource() -> Resource<Todo> {
+        return Resource(
+            index: index,
+            store: create,
+            show: show,
+            replace: update,
+            modify: update,
+            destroy: delete,
+            clear: clear,
+            aboutItem: nil,
+            aboutMultiple: nil
+        )
+
+        /*
+        return Resource(
+            index: <#T##Resource.Multiple?##Resource.Multiple?##(Request) throws -> ResponseRepresentable#>,
+            store: <#T##Resource.Multiple?##Resource.Multiple?##(Request) throws -> ResponseRepresentable#>,
+            show: <#T##(Request, StringInitializable) throws -> ResponseRepresentable?##(Request, StringInitializable) throws -> ResponseRepresentable?##(Request, StringInitializable) throws -> ResponseRepresentable#>,
+            replace: <#T##(Request, StringInitializable) throws -> ResponseRepresentable?##(Request, StringInitializable) throws -> ResponseRepresentable?##(Request, StringInitializable) throws -> ResponseRepresentable#>,
+            modify: <#T##(Request, StringInitializable) throws -> ResponseRepresentable?##(Request, StringInitializable) throws -> ResponseRepresentable?##(Request, StringInitializable) throws -> ResponseRepresentable#>,
+            destroy: <#T##(Request, StringInitializable) throws -> ResponseRepresentable?##(Request, StringInitializable) throws -> ResponseRepresentable?##(Request, StringInitializable) throws -> ResponseRepresentable#>,
+            clear: <#T##Resource.Multiple?##Resource.Multiple?##(Request) throws -> ResponseRepresentable#>,
+            aboutItem: <#T##(Request, StringInitializable) throws -> ResponseRepresentable?##(Request, StringInitializable) throws -> ResponseRepresentable?##(Request, StringInitializable) throws -> ResponseRepresentable#>,
+            aboutMultiple: <#T##Resource.Multiple?##Resource.Multiple?##(Request) throws -> ResponseRepresentable#>
+        )
+        */
+    }
+}
+
 /*
 class TodoController: Controller {
     typealias Item = Todo

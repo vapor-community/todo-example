@@ -7,10 +7,11 @@ let package = Package(
         .Package(url: "https://github.com/vapor/mysql-provider.git", majorVersion: 0, minor: 6),
     ],
     exclude: [
+        "Config",
         "Deploy",
         "Public",
         "Resources",
-		    "Tests",
-		    "Database"
+        "Tests",
+        "Database"
     ]
 )
