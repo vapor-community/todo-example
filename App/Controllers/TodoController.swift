@@ -26,11 +26,13 @@ final class TodoController: ResourceRepresentable {
         return JSON([])
     }
 
-    func update(request: Request, existing: Todo) throws -> ResponseRepresentable {
-        var new = try request.todo()
-        new.merge(existing: existing)
-        try new.update()
-        return new
+    func update(request: Request, todo: Todo) throws -> ResponseRepresentable {
+        let new = try request.todo()
+
+        var todo = todo
+        todo.merge(updates: new)
+        try todo.save()
+        return todo
     }
 
     func replace(request: Request, todo: Todo) throws -> ResponseRepresentable {
@@ -40,32 +42,20 @@ final class TodoController: ResourceRepresentable {
 
     func makeResource() -> Resource<Todo> {
         return Resource(
-            index: self.index,
-            store: self.create,
-            show: self.show,
-            replace: self.replace,
-            modify: self.update,
-            destroy: self.delete,
-            clear: self.clear
+            index: index,
+            store: create,
+            show: show,
+            replace: replace,
+            modify: update,
+            destroy: delete,
+            clear: clear
         )
     }
 }
 
 extension Request {
-    fileprivate func todo() throws -> Todo {
-        guard let todo = try json.flatMap({ try Todo(node: $0) }) else {
-            throw Abort.notFound
-        }
-        return todo
-    }
-}
-
-extension Model {
-    static func deleteAll() throws {
-        try Self.query().delete()
-    }
-
-    func update() throws {
-        try type(of: self).query().createOrModify(makeNode())
+    func todo() throws -> Todo {
+        guard let json = json else { throw Abort.badRequest }
+        return try Todo(node: json)
     }
 }

@@ -1,6 +1,8 @@
 import Vapor
 import Fluent
 
+// MARK: Model
+
 struct Todo: Model {
     var id: Node?
 
@@ -54,10 +56,10 @@ extension Todo: Preparation {
 // MARK: Merge
 
 extension Todo {
-    mutating func merge(existing: Todo) {
-        id = id ?? existing.id
-        completed = completed ?? existing.completed
-        title = title ?? existing.title
-        order = order ?? existing.order
+    mutating func merge(updates: Todo) {
+        id = updates.id ?? id
+        completed = updates.completed ?? completed
+        title = updates.title ?? title
+        order = updates.order ?? order
     }
 }

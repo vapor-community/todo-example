@@ -7782,215 +7782,215 @@
         _______Group_Fluent = {
             isa = PBXGroup;
             name = 'Fluent';
-            path = 'Packages/Fluent-0.11.0/Sources/Fluent';
+            path = 'Packages/Fluent-0.11.1/Sources/Fluent';
             sourceTree = '<group>';
-            children = ('__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Database/Database.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Database/Driver.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Entity/Entity.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Memory/Memory+Filters.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Memory/Memory+Group.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Memory/Memory+Sort.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Memory/MemoryDriver.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Preparation/Database+Preparation.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Preparation/Migration.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Preparation/Preparation.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Preparation/PreparationError.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Action.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Comparison.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Filter.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Group.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Join.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Limit.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Query.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Scope.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Sort.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Relations/Children.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Relations/Parent.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Relations/RelationError.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Relations/Siblings.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Database+Schema.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Schema+Creator.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Schema+Field.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Schema+Modifier.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Schema.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/SQL/GeneralSQLSerializer.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/SQL/SQL+Query.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/SQL/SQL+Schema.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/SQL/SQL.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/SQL/SQLSerializer.swift', '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Utilities/Fluent+Node.swift');
+            children = ('__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Database/Database.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Database/Driver.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Entity/Entity.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Memory/Memory+Filters.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Memory/Memory+Group.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Memory/Memory+Sort.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Memory/MemoryDriver.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Preparation/Database+Preparation.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Preparation/Migration.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Preparation/Preparation.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Preparation/PreparationError.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Action.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Comparison.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Filter.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Group.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Join.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Limit.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Query.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Scope.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Sort.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Relations/Children.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Relations/Parent.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Relations/RelationError.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Relations/Siblings.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Database+Schema.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Schema+Creator.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Schema+Field.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Schema+Modifier.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Schema.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/SQL/GeneralSQLSerializer.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/SQL/SQL+Query.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/SQL/SQL+Schema.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/SQL/SQL.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/SQL/SQLSerializer.swift', '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Utilities/Fluent+Node.swift');
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Database/Database.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Database/Database.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Database/Database.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Database/Driver.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Database/Driver.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Database/Driver.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Entity/Entity.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Entity/Entity.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Entity/Entity.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Memory/Memory+Filters.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Memory/Memory+Filters.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Memory/Memory+Filters.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Memory/Memory+Group.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Memory/Memory+Group.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Memory/Memory+Group.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Memory/Memory+Sort.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Memory/Memory+Sort.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Memory/Memory+Sort.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Memory/MemoryDriver.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Memory/MemoryDriver.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Memory/MemoryDriver.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Preparation/Database+Preparation.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Preparation/Database+Preparation.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Preparation/Database+Preparation.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Preparation/Migration.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Preparation/Migration.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Preparation/Migration.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Preparation/Preparation.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Preparation/Preparation.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Preparation/Preparation.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Preparation/PreparationError.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Preparation/PreparationError.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Preparation/PreparationError.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Action.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Action.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Query/Action.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Comparison.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Comparison.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Query/Comparison.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Filter.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Filter.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Query/Filter.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Group.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Group.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Query/Group.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Join.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Join.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Query/Join.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Limit.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Limit.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Query/Limit.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Query.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Query.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Query/Query.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Scope.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Scope.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Query/Scope.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Sort.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Sort.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Query/Sort.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Relations/Children.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Relations/Children.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Relations/Children.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Relations/Parent.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Relations/Parent.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Relations/Parent.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Relations/RelationError.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Relations/RelationError.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Relations/RelationError.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Relations/Siblings.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Relations/Siblings.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Relations/Siblings.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Database+Schema.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Database+Schema.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Schema/Database+Schema.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Schema+Creator.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Schema+Creator.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Schema/Schema+Creator.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Schema+Field.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Schema+Field.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Schema/Schema+Field.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Schema+Modifier.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Schema+Modifier.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Schema/Schema+Modifier.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Schema.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Schema.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Schema/Schema.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/SQL/GeneralSQLSerializer.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/SQL/GeneralSQLSerializer.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'SQL/GeneralSQLSerializer.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/SQL/SQL+Query.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/SQL/SQL+Query.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'SQL/SQL+Query.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/SQL/SQL+Schema.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/SQL/SQL+Schema.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'SQL/SQL+Schema.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/SQL/SQL.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/SQL/SQL.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'SQL/SQL.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/SQL/SQLSerializer.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/SQL/SQLSerializer.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'SQL/SQLSerializer.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Utilities/Fluent+Node.swift' = {
+        '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Utilities/Fluent+Node.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Utilities/Fluent+Node.swift';
@@ -8015,148 +8015,148 @@
         };
         CompilePhase_Fluent = {
             isa = PBXSourcesBuildPhase;
-            files = ('__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Database/Database.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Database/Driver.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Entity/Entity.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Memory/Memory+Filters.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Memory/Memory+Group.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Memory/Memory+Sort.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Memory/MemoryDriver.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Preparation/Database+Preparation.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Preparation/Migration.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Preparation/Preparation.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Preparation/PreparationError.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Query/Action.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Query/Comparison.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Query/Filter.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Query/Group.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Query/Join.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Query/Limit.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Query/Query.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Query/Scope.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Query/Sort.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Relations/Children.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Relations/Parent.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Relations/RelationError.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Relations/Siblings.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Database+Schema.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Schema+Creator.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Schema+Field.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Schema+Modifier.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Schema.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/SQL/GeneralSQLSerializer.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/SQL/SQL+Query.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/SQL/SQL+Schema.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/SQL/SQL.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/SQL/SQLSerializer.swift', '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Utilities/Fluent+Node.swift');
+            files = ('__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Database/Database.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Database/Driver.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Entity/Entity.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Memory/Memory+Filters.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Memory/Memory+Group.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Memory/Memory+Sort.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Memory/MemoryDriver.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Preparation/Database+Preparation.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Preparation/Migration.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Preparation/Preparation.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Preparation/PreparationError.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Query/Action.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Query/Comparison.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Query/Filter.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Query/Group.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Query/Join.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Query/Limit.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Query/Query.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Query/Scope.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Query/Sort.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Relations/Children.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Relations/Parent.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Relations/RelationError.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Relations/Siblings.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Database+Schema.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Schema+Creator.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Schema+Field.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Schema+Modifier.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Schema.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/SQL/GeneralSQLSerializer.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/SQL/SQL+Query.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/SQL/SQL+Schema.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/SQL/SQL.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/SQL/SQLSerializer.swift', '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Utilities/Fluent+Node.swift');
             runOnlyForDeploymentPostprocessing = 0;
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Database/Database.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Database/Database.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Database/Database.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Database/Database.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Database/Driver.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Database/Driver.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Database/Driver.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Database/Driver.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Entity/Entity.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Entity/Entity.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Entity/Entity.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Entity/Entity.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Memory/Memory+Filters.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Memory/Memory+Filters.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Memory/Memory+Filters.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Memory/Memory+Filters.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Memory/Memory+Group.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Memory/Memory+Group.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Memory/Memory+Group.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Memory/Memory+Group.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Memory/Memory+Sort.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Memory/Memory+Sort.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Memory/Memory+Sort.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Memory/Memory+Sort.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Memory/MemoryDriver.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Memory/MemoryDriver.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Memory/MemoryDriver.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Memory/MemoryDriver.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Preparation/Database+Preparation.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Preparation/Database+Preparation.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Preparation/Database+Preparation.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Preparation/Database+Preparation.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Preparation/Migration.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Preparation/Migration.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Preparation/Migration.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Preparation/Migration.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Preparation/Preparation.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Preparation/Preparation.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Preparation/Preparation.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Preparation/Preparation.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Preparation/PreparationError.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Preparation/PreparationError.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Preparation/PreparationError.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Preparation/PreparationError.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Query/Action.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Query/Action.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Action.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Action.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Query/Comparison.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Query/Comparison.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Comparison.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Comparison.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Query/Filter.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Query/Filter.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Filter.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Filter.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Query/Group.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Query/Group.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Group.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Group.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Query/Join.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Query/Join.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Join.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Join.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Query/Limit.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Query/Limit.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Limit.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Limit.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Query/Query.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Query/Query.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Query.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Query.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Query/Scope.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Query/Scope.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Scope.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Scope.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Query/Sort.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Query/Sort.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Query/Sort.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Query/Sort.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Relations/Children.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Relations/Children.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Relations/Children.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Relations/Children.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Relations/Parent.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Relations/Parent.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Relations/Parent.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Relations/Parent.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Relations/RelationError.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Relations/RelationError.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Relations/RelationError.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Relations/RelationError.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Relations/Siblings.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Relations/Siblings.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Relations/Siblings.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Relations/Siblings.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Database+Schema.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Database+Schema.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Database+Schema.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Database+Schema.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Schema+Creator.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Schema+Creator.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Schema+Creator.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Schema+Creator.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Schema+Field.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Schema+Field.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Schema+Field.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Schema+Field.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Schema+Modifier.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Schema+Modifier.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Schema+Modifier.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Schema+Modifier.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Schema.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Schema.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Schema/Schema.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Schema/Schema.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/SQL/GeneralSQLSerializer.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/SQL/GeneralSQLSerializer.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/SQL/GeneralSQLSerializer.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/SQL/GeneralSQLSerializer.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/SQL/SQL+Query.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/SQL/SQL+Query.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/SQL/SQL+Query.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/SQL/SQL+Query.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/SQL/SQL+Schema.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/SQL/SQL+Schema.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/SQL/SQL+Schema.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/SQL/SQL+Schema.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/SQL/SQL.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/SQL/SQL.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/SQL/SQL.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/SQL/SQL.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/SQL/SQLSerializer.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/SQL/SQLSerializer.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/SQL/SQLSerializer.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/SQL/SQLSerializer.swift';
         };
-        '__src_cc_ref_Packages/Fluent-0.11.0/Sources/Fluent/Utilities/Fluent+Node.swift' = {
+        '__src_cc_ref_Packages/Fluent-0.11.1/Sources/Fluent/Utilities/Fluent+Node.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/Fluent-0.11.0/Sources/Fluent/Utilities/Fluent+Node.swift';
+            fileRef = '__PBXFileRef_Packages/Fluent-0.11.1/Sources/Fluent/Utilities/Fluent+Node.swift';
         };
         ___LinkPhase_Fluent = {
             isa = PBXFrameworksBuildPhase;
@@ -10710,47 +10710,47 @@
         _______Group_JSON = {
             isa = PBXGroup;
             name = 'JSON';
-            path = 'Packages/JSON-0.7.1/Sources/JSON';
+            path = 'Packages/JSON-0.7.2/Sources/JSON';
             sourceTree = '<group>';
-            children = ('__PBXFileRef_Packages/JSON-0.7.1/Sources/JSON/JSON+Bytes.swift', '__PBXFileRef_Packages/JSON-0.7.1/Sources/JSON/JSON+Equatable.swift', '__PBXFileRef_Packages/JSON-0.7.1/Sources/JSON/JSON+Node.swift', '__PBXFileRef_Packages/JSON-0.7.1/Sources/JSON/JSON+Parse.swift', '__PBXFileRef_Packages/JSON-0.7.1/Sources/JSON/JSON+Serialize.swift', '__PBXFileRef_Packages/JSON-0.7.1/Sources/JSON/JSON.swift', '__PBXFileRef_Packages/JSON-0.7.1/Sources/JSON/JSONRepresentable.swift');
+            children = ('__PBXFileRef_Packages/JSON-0.7.2/Sources/JSON/JSON+Bytes.swift', '__PBXFileRef_Packages/JSON-0.7.2/Sources/JSON/JSON+Equatable.swift', '__PBXFileRef_Packages/JSON-0.7.2/Sources/JSON/JSON+Node.swift', '__PBXFileRef_Packages/JSON-0.7.2/Sources/JSON/JSON+Parse.swift', '__PBXFileRef_Packages/JSON-0.7.2/Sources/JSON/JSON+Serialize.swift', '__PBXFileRef_Packages/JSON-0.7.2/Sources/JSON/JSON.swift', '__PBXFileRef_Packages/JSON-0.7.2/Sources/JSON/JSONRepresentable.swift');
         };
-        '__PBXFileRef_Packages/JSON-0.7.1/Sources/JSON/JSON+Bytes.swift' = {
+        '__PBXFileRef_Packages/JSON-0.7.2/Sources/JSON/JSON+Bytes.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'JSON+Bytes.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/JSON-0.7.1/Sources/JSON/JSON+Equatable.swift' = {
+        '__PBXFileRef_Packages/JSON-0.7.2/Sources/JSON/JSON+Equatable.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'JSON+Equatable.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/JSON-0.7.1/Sources/JSON/JSON+Node.swift' = {
+        '__PBXFileRef_Packages/JSON-0.7.2/Sources/JSON/JSON+Node.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'JSON+Node.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/JSON-0.7.1/Sources/JSON/JSON+Parse.swift' = {
+        '__PBXFileRef_Packages/JSON-0.7.2/Sources/JSON/JSON+Parse.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'JSON+Parse.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/JSON-0.7.1/Sources/JSON/JSON+Serialize.swift' = {
+        '__PBXFileRef_Packages/JSON-0.7.2/Sources/JSON/JSON+Serialize.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'JSON+Serialize.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/JSON-0.7.1/Sources/JSON/JSON.swift' = {
+        '__PBXFileRef_Packages/JSON-0.7.2/Sources/JSON/JSON.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'JSON.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/JSON-0.7.1/Sources/JSON/JSONRepresentable.swift' = {
+        '__PBXFileRef_Packages/JSON-0.7.2/Sources/JSON/JSONRepresentable.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'JSONRepresentable.swift';
@@ -10775,36 +10775,36 @@
         };
         CompilePhase_JSON = {
             isa = PBXSourcesBuildPhase;
-            files = ('__src_cc_ref_Packages/JSON-0.7.1/Sources/JSON/JSON+Bytes.swift', '__src_cc_ref_Packages/JSON-0.7.1/Sources/JSON/JSON+Equatable.swift', '__src_cc_ref_Packages/JSON-0.7.1/Sources/JSON/JSON+Node.swift', '__src_cc_ref_Packages/JSON-0.7.1/Sources/JSON/JSON+Parse.swift', '__src_cc_ref_Packages/JSON-0.7.1/Sources/JSON/JSON+Serialize.swift', '__src_cc_ref_Packages/JSON-0.7.1/Sources/JSON/JSON.swift', '__src_cc_ref_Packages/JSON-0.7.1/Sources/JSON/JSONRepresentable.swift');
+            files = ('__src_cc_ref_Packages/JSON-0.7.2/Sources/JSON/JSON+Bytes.swift', '__src_cc_ref_Packages/JSON-0.7.2/Sources/JSON/JSON+Equatable.swift', '__src_cc_ref_Packages/JSON-0.7.2/Sources/JSON/JSON+Node.swift', '__src_cc_ref_Packages/JSON-0.7.2/Sources/JSON/JSON+Parse.swift', '__src_cc_ref_Packages/JSON-0.7.2/Sources/JSON/JSON+Serialize.swift', '__src_cc_ref_Packages/JSON-0.7.2/Sources/JSON/JSON.swift', '__src_cc_ref_Packages/JSON-0.7.2/Sources/JSON/JSONRepresentable.swift');
             runOnlyForDeploymentPostprocessing = 0;
         };
-        '__src_cc_ref_Packages/JSON-0.7.1/Sources/JSON/JSON+Bytes.swift' = {
+        '__src_cc_ref_Packages/JSON-0.7.2/Sources/JSON/JSON+Bytes.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/JSON-0.7.1/Sources/JSON/JSON+Bytes.swift';
+            fileRef = '__PBXFileRef_Packages/JSON-0.7.2/Sources/JSON/JSON+Bytes.swift';
         };
-        '__src_cc_ref_Packages/JSON-0.7.1/Sources/JSON/JSON+Equatable.swift' = {
+        '__src_cc_ref_Packages/JSON-0.7.2/Sources/JSON/JSON+Equatable.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/JSON-0.7.1/Sources/JSON/JSON+Equatable.swift';
+            fileRef = '__PBXFileRef_Packages/JSON-0.7.2/Sources/JSON/JSON+Equatable.swift';
         };
-        '__src_cc_ref_Packages/JSON-0.7.1/Sources/JSON/JSON+Node.swift' = {
+        '__src_cc_ref_Packages/JSON-0.7.2/Sources/JSON/JSON+Node.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/JSON-0.7.1/Sources/JSON/JSON+Node.swift';
+            fileRef = '__PBXFileRef_Packages/JSON-0.7.2/Sources/JSON/JSON+Node.swift';
         };
-        '__src_cc_ref_Packages/JSON-0.7.1/Sources/JSON/JSON+Parse.swift' = {
+        '__src_cc_ref_Packages/JSON-0.7.2/Sources/JSON/JSON+Parse.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/JSON-0.7.1/Sources/JSON/JSON+Parse.swift';
+            fileRef = '__PBXFileRef_Packages/JSON-0.7.2/Sources/JSON/JSON+Parse.swift';
         };
-        '__src_cc_ref_Packages/JSON-0.7.1/Sources/JSON/JSON+Serialize.swift' = {
+        '__src_cc_ref_Packages/JSON-0.7.2/Sources/JSON/JSON+Serialize.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/JSON-0.7.1/Sources/JSON/JSON+Serialize.swift';
+            fileRef = '__PBXFileRef_Packages/JSON-0.7.2/Sources/JSON/JSON+Serialize.swift';
         };
-        '__src_cc_ref_Packages/JSON-0.7.1/Sources/JSON/JSON.swift' = {
+        '__src_cc_ref_Packages/JSON-0.7.2/Sources/JSON/JSON.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/JSON-0.7.1/Sources/JSON/JSON.swift';
+            fileRef = '__PBXFileRef_Packages/JSON-0.7.2/Sources/JSON/JSON.swift';
         };
-        '__src_cc_ref_Packages/JSON-0.7.1/Sources/JSON/JSONRepresentable.swift' = {
+        '__src_cc_ref_Packages/JSON-0.7.2/Sources/JSON/JSONRepresentable.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/JSON-0.7.1/Sources/JSON/JSONRepresentable.swift';
+            fileRef = '__PBXFileRef_Packages/JSON-0.7.2/Sources/JSON/JSONRepresentable.swift';
         };
         ___LinkPhase_JSON = {
             isa = PBXFrameworksBuildPhase;
@@ -14940,65 +14940,65 @@
         _______Group_MySQL = {
             isa = PBXGroup;
             name = 'MySQL';
-            path = 'Packages/MySQL-0.6.1/Sources/MySQL';
+            path = 'Packages/MySQL-0.6.2/Sources/MySQL';
             sourceTree = '<group>';
-            children = ('__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Bind+Node.swift', '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Bind.swift', '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Binds.swift', '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Connection.swift', '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Database.swift', '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Error.swift', '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Field+Variant.swift', '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Field.swift', '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Fields.swift', '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/MySQL+Node.swift');
+            children = ('__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Bind+Node.swift', '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Bind.swift', '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Binds.swift', '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Connection.swift', '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Database.swift', '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Error.swift', '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Field+Variant.swift', '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Field.swift', '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Fields.swift', '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/MySQL+Node.swift');
         };
-        '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Bind+Node.swift' = {
+        '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Bind+Node.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Bind+Node.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Bind.swift' = {
+        '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Bind.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Bind.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Binds.swift' = {
+        '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Binds.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Binds.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Connection.swift' = {
+        '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Connection.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Connection.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Database.swift' = {
+        '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Database.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Database.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Error.swift' = {
+        '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Error.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Error.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Field+Variant.swift' = {
+        '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Field+Variant.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Field+Variant.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Field.swift' = {
+        '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Field.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Field.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Fields.swift' = {
+        '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Fields.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'Fields.swift';
             sourceTree = '<group>';
         };
-        '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/MySQL+Node.swift' = {
+        '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/MySQL+Node.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             path = 'MySQL+Node.swift';
@@ -15023,48 +15023,48 @@
         };
         CompilePhase_MySQL = {
             isa = PBXSourcesBuildPhase;
-            files = ('__src_cc_ref_Packages/MySQL-0.6.1/Sources/MySQL/Bind+Node.swift', '__src_cc_ref_Packages/MySQL-0.6.1/Sources/MySQL/Bind.swift', '__src_cc_ref_Packages/MySQL-0.6.1/Sources/MySQL/Binds.swift', '__src_cc_ref_Packages/MySQL-0.6.1/Sources/MySQL/Connection.swift', '__src_cc_ref_Packages/MySQL-0.6.1/Sources/MySQL/Database.swift', '__src_cc_ref_Packages/MySQL-0.6.1/Sources/MySQL/Error.swift', '__src_cc_ref_Packages/MySQL-0.6.1/Sources/MySQL/Field+Variant.swift', '__src_cc_ref_Packages/MySQL-0.6.1/Sources/MySQL/Field.swift', '__src_cc_ref_Packages/MySQL-0.6.1/Sources/MySQL/Fields.swift', '__src_cc_ref_Packages/MySQL-0.6.1/Sources/MySQL/MySQL+Node.swift');
+            files = ('__src_cc_ref_Packages/MySQL-0.6.2/Sources/MySQL/Bind+Node.swift', '__src_cc_ref_Packages/MySQL-0.6.2/Sources/MySQL/Bind.swift', '__src_cc_ref_Packages/MySQL-0.6.2/Sources/MySQL/Binds.swift', '__src_cc_ref_Packages/MySQL-0.6.2/Sources/MySQL/Connection.swift', '__src_cc_ref_Packages/MySQL-0.6.2/Sources/MySQL/Database.swift', '__src_cc_ref_Packages/MySQL-0.6.2/Sources/MySQL/Error.swift', '__src_cc_ref_Packages/MySQL-0.6.2/Sources/MySQL/Field+Variant.swift', '__src_cc_ref_Packages/MySQL-0.6.2/Sources/MySQL/Field.swift', '__src_cc_ref_Packages/MySQL-0.6.2/Sources/MySQL/Fields.swift', '__src_cc_ref_Packages/MySQL-0.6.2/Sources/MySQL/MySQL+Node.swift');
             runOnlyForDeploymentPostprocessing = 0;
         };
-        '__src_cc_ref_Packages/MySQL-0.6.1/Sources/MySQL/Bind+Node.swift' = {
+        '__src_cc_ref_Packages/MySQL-0.6.2/Sources/MySQL/Bind+Node.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Bind+Node.swift';
+            fileRef = '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Bind+Node.swift';
         };
-        '__src_cc_ref_Packages/MySQL-0.6.1/Sources/MySQL/Bind.swift' = {
+        '__src_cc_ref_Packages/MySQL-0.6.2/Sources/MySQL/Bind.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Bind.swift';
+            fileRef = '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Bind.swift';
         };
-        '__src_cc_ref_Packages/MySQL-0.6.1/Sources/MySQL/Binds.swift' = {
+        '__src_cc_ref_Packages/MySQL-0.6.2/Sources/MySQL/Binds.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Binds.swift';
+            fileRef = '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Binds.swift';
         };
-        '__src_cc_ref_Packages/MySQL-0.6.1/Sources/MySQL/Connection.swift' = {
+        '__src_cc_ref_Packages/MySQL-0.6.2/Sources/MySQL/Connection.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Connection.swift';
+            fileRef = '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Connection.swift';
         };
-        '__src_cc_ref_Packages/MySQL-0.6.1/Sources/MySQL/Database.swift' = {
+        '__src_cc_ref_Packages/MySQL-0.6.2/Sources/MySQL/Database.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Database.swift';
+            fileRef = '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Database.swift';
         };
-        '__src_cc_ref_Packages/MySQL-0.6.1/Sources/MySQL/Error.swift' = {
+        '__src_cc_ref_Packages/MySQL-0.6.2/Sources/MySQL/Error.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Error.swift';
+            fileRef = '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Error.swift';
         };
-        '__src_cc_ref_Packages/MySQL-0.6.1/Sources/MySQL/Field+Variant.swift' = {
+        '__src_cc_ref_Packages/MySQL-0.6.2/Sources/MySQL/Field+Variant.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Field+Variant.swift';
+            fileRef = '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Field+Variant.swift';
         };
-        '__src_cc_ref_Packages/MySQL-0.6.1/Sources/MySQL/Field.swift' = {
+        '__src_cc_ref_Packages/MySQL-0.6.2/Sources/MySQL/Field.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Field.swift';
+            fileRef = '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Field.swift';
         };
-        '__src_cc_ref_Packages/MySQL-0.6.1/Sources/MySQL/Fields.swift' = {
+        '__src_cc_ref_Packages/MySQL-0.6.2/Sources/MySQL/Fields.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/Fields.swift';
+            fileRef = '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/Fields.swift';
         };
-        '__src_cc_ref_Packages/MySQL-0.6.1/Sources/MySQL/MySQL+Node.swift' = {
+        '__src_cc_ref_Packages/MySQL-0.6.2/Sources/MySQL/MySQL+Node.swift' = {
             isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Packages/MySQL-0.6.1/Sources/MySQL/MySQL+Node.swift';
+            fileRef = '__PBXFileRef_Packages/MySQL-0.6.2/Sources/MySQL/MySQL+Node.swift';
         };
         ___LinkPhase_MySQL = {
             isa = PBXFrameworksBuildPhase;
