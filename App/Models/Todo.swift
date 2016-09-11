@@ -40,6 +40,6 @@ extension Todo: Preparation {
     }
 
     static func revert(_ database: Database) throws {
-        fatalError("unimplemented")
+        fatalError("unimplemented \(#function)")
     }
 }

@@ -6,6 +6,6 @@ drop.middleware.append(CorsMiddleware())
 
 drop.get { _ in try drop.view.make("welcome.html") }
 drop.get("tests") { _ in try drop.view.make("todo-backend-tests.html") }
-drop.resource("todos", TodoController())
+drop.grouped(TodoURLMiddleware()).resource("todos", TodoController())
 
 drop.serve()

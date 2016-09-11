@@ -1,4 +1,5 @@
 import HTTP
+import JSON
 
 class CorsMiddleware: Middleware {
     func respond(to request: Request, chainingTo chain: Responder) throws -> Response {
