@@ -5,29 +5,36 @@ struct Todo: Model {
     var id: Node?
 
     var title: String?
-    var completed: Bool
+    var completed: Bool?
     var order: Int?
 }
+
+// MARK: NodeConvertible
 
 extension Todo: NodeConvertible {
     init(node: Node, in context: Context) throws {
         id = node["id"]
         title = node["title"]?.string
-        completed = node["completed"]?.bool ?? false
+        completed = node["completed"]?.bool
         order = node["order"]?.int
     }
 
     func makeNode() throws -> Node {
+        // model won't always have value to allow proper merges, 
+        // database defaults to false
+        let complete = completed ?? false
         return try Node(node:
             [
                 "id": id,
                 "title": title,
-                "completed": completed,
+                "completed": complete,
                 "order": order
             ]
         )
     }
 }
+
+// MARK: Database Preparations
 
 extension Todo: Preparation {
     static func prepare(_ database: Database) throws {
@@ -41,5 +48,16 @@ extension Todo: Preparation {
 
     static func revert(_ database: Database) throws {
         fatalError("unimplemented \(#function)")
+    }
+}
+
+// MARK: Merge
+
+extension Todo {
+    mutating func merge(existing: Todo) {
+        id = id ?? existing.id
+        completed = completed ?? existing.completed
+        title = title ?? existing.title
+        order = order ?? existing.order
     }
 }

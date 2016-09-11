@@ -60,15 +60,6 @@ extension Request {
     }
 }
 
-extension Todo {
-    fileprivate mutating func merge(existing: Todo) {
-        id = id ?? existing.id
-        // completed is always self
-        title = title ?? existing.title
-        order = order ?? existing.order
-    }
-}
-
 extension Model {
     static func deleteAll() throws {
         try Self.query().delete()
