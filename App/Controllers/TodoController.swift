@@ -2,6 +2,7 @@ import HTTP
 import Vapor
 import MySQL
 import FluentMySQL
+import Fluent
 
 var count = 0
 extension Todo {
@@ -37,73 +38,86 @@ extension Todo {
 }
 
 final class TodoController: ResourceRepresentable {
-//    let db: MySQL.Database
-//    init(_ db: MySQL.Database) {
-//        self.db = db
-//    }
 
     func index(request: Request) throws -> ResponseRepresentable {
+        print("\(#function):\n\(request)")
         let json = try Todo.all().map { try $0.makeJson(with: request) }
         return JSON(json)
     }
 
     func create(request: Request) throws -> ResponseRepresentable {
-
-
+        print("\(#function):\n\(request)")
         guard
             var todo = try request.json.flatMap({ try Todo(node: $0) })
             else {
                 throw Abort.notFound
             }
-//
-//        guard let driver = Todo.database?.driver as? MySQLDriver else { fatalError() }
-//        let db = driver.database
-//        let entry = "INSERT INTO \(Todo.entity) (title, completed) VALUES(?, ?, ?);"
-//        do {
-//            let result = try db.execute("INSERT INTO \(Todo.entity) (title, completed) VALUES('HERE IS TITLE', 1)").map { Node($0) }
-//            //let result = try db.execute(entry, [todo.title, todo.completed, todo.order.flatMap({ Node($0) }) ?? 0]).map { Node($0) }
-//            print("Result: \(result)")
-//            return try result.first?.makeJson(with: request) ?? "FUDGE"
-//        } catch {
-//            print("Error: \(error)")
-//            return ""
-//        }
-//
-//
 
         try todo.save()
         return try todo.makeJson(with: request)
     }
 
     func show(request: Request, todo: Todo) throws -> ResponseRepresentable {
+        print("\(#function):\n\(request)\n\(todo)")
         return try todo.makeJson(with: request)
     }
 
     func delete(request: Request, todo: Todo) throws -> ResponseRepresentable {
+        print("\(#function):\n\(request)\n\(todo)")
         try todo.delete()
         return JSON([:])
     }
 
     func clear(request: Request) throws -> ResponseRepresentable {
+        print("\(#function):\n\(request)")
         try Todo.query().delete()
         return JSON([])
     }
 
     func update(request: Request, todo: Todo) throws -> ResponseRepresentable {
+        print("\(#function):\n\(request)\n\(todo)")
         guard
             var new = try request.json.flatMap({ try Todo(node: $0) })
             else {
                 throw Abort.notFound
             }
 
+        print("orig: \(todo)")
+        print("pre : \(new)")
         new.merge(existing: todo)
-        try new.save()
+        print("post: \(new)")
+        print("")
+        // delete old to workaround save not updating bug
+        // try new.save()
+        try Todo.query().createOrModify(new.makeNode())
+//        guard let db = Todo.database, let msDriver = db.driver as? MySQLDriver else { throw Abort.notFound }
+//        msDriver.database.execute("UPDATE \(Todo.entity) SET ", <#T##values: [NodeRepresentable]##[NodeRepresentable]#>, <#T##on: Connection?##Connection?#>)
+//        var query = Query<Todo>.init(db)
+//        query.action = .modify
+//        
+//        //let query = try Todo.query()
+//        query.sql = .update
+
         return try new.makeJson(with: request)
     }
 
     func replace(request: Request, todo: Todo) throws -> ResponseRepresentable {
+        print("\(#function):\n\(request)\n\(todo)")
+        try todo.delete()
         return try create(request: request)
     }
+
+    lazy var resource: Resource<Todo> = Resource(
+        index: self.index,
+        store: self.create,
+        show: self.show,
+        replace: self.replace,
+        modify: self.update,
+        destroy: self.delete,
+        clear: self.clear,
+        aboutItem: nil,
+        aboutMultiple: nil
+    )
 
     func makeResource() -> Resource<Todo> {
         return Resource(

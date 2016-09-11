@@ -18,7 +18,7 @@ app.middleware.append(CorsMiddleware())
 */
 app.get { _ in try app.view.make("welcome.html") }
 app.get("tests") { _ in try app.view.make("todo-backend-tests.html") }
-print("T: \(type(of: app.database!))")
+//print("T: \(type(of: app.database!))")
 app.resource("todos", TodoController())
 /**
 	This will set up the appropriate GET, PUT, and POST

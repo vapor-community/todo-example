@@ -4,7 +4,7 @@ import Fluent
 struct Todo: Model {
     var id: Node?
 
-    var title: String
+    var title: String?
     var completed: Bool
     var order: Int?
 }
@@ -12,14 +12,14 @@ struct Todo: Model {
 extension Todo: NodeConvertible {
     init(node: Node, in context: Context) throws {
         id = node["id"]
-        title = try node.extract("title")
+        title = node["title"]?.string
         completed = node["completed"]?.bool ?? false
         order = node["order"]?.int
     }
 
     func makeNode() throws -> Node {
         defer { print("Made node") }
-        return try Node.init(node:
+        return try Node(node:
             [
                 "id": id,
                 "title": title,
