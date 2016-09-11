@@ -5,9 +5,8 @@ struct Todo: Model {
     var id: Node?
 
     var title: String?
-    let completed: Bool
-    let order: Int?
-    var url: String?
+    var completed: Bool
+    var order: Int?
 }
 
 extension Todo: NodeConvertible {
@@ -16,22 +15,17 @@ extension Todo: NodeConvertible {
         title = node["title"]?.string
         completed = node["completed"]?.bool ?? false
         order = node["order"]?.int
-        url = node["url"]?.string
     }
 
     func makeNode() throws -> Node {
-        var node = try Node.init(node:
+        return try Node.init(node:
             [
                 "id": id,
                 "title": title,
                 "completed": completed,
-                "order": order,
-                "url": url
+                "order": order
             ]
         )
-
-        print(node.nodeObject)
-        return node
     }
 }
 

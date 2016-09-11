@@ -14,8 +14,18 @@ extension Todo {
         if let port = request.uri.port {
             authority += ":\(port)"
         }
+        // TODO: Header "Origin"?
         node["url"] = "\(request.uri.scheme)://\(authority)/todos/\(id)".makeNode()
         return try node.converted()
+    }
+}
+
+extension Todo {
+    mutating func merge(existing: Todo) {
+        id = id ?? existing.id
+        title = title ?? existing.title
+        // completed is always self
+        order = order ?? existing.order
     }
 }
 
@@ -26,16 +36,11 @@ final class TodoController: ResourceRepresentable {
     }
 
     func create(request: Request) throws -> ResponseRepresentable {
-        print("Create: \(try request.body.bytes?.string())")
         guard
             var todo = try request.json.flatMap({ try Todo(node: $0) })
             else {
                 throw Abort.notFound
             }
-
-        todo.title = todo.title.flatMap { $0 + "**\(count)" }
-
-        print("Saving: \(todo)")
         try todo.save()
         return try todo.makeJson(with: request)
     }
@@ -51,19 +56,23 @@ final class TodoController: ResourceRepresentable {
 
     func clear(request: Request) throws -> ResponseRepresentable {
         try Todo.query().delete()
-/*
-        guard let driver = Todo.database?.driver as? MySQLDriver else {
-            throw Abort.notFound
-        }
-        try driver.database.execute("DELETE FROM \(Todo.entity)")
-    */
         return JSON([])
     }
 
     func update(request: Request, todo: Todo) throws -> ResponseRepresentable {
-        print("Request: \(request.description)")
-        print("")
-        return "whoops"
+        guard
+            var new = try request.json.flatMap({ try Todo(node: $0) })
+            else {
+                throw Abort.notFound
+            }
+
+        new.merge(existing: todo)
+        try new.save()
+        return try new.makeJson(with: request)
+    }
+
+    func replace(request: Request, todo: Todo) throws -> ResponseRepresentable {
+        return try create(request: request)
     }
 
     func makeResource() -> Resource<Todo> {
@@ -71,7 +80,7 @@ final class TodoController: ResourceRepresentable {
             index: index,
             store: create,
             show: show,
-            replace: update,
+            replace: replace,
             modify: update,
             destroy: delete,
             clear: clear,
