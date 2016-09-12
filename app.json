@@ -1,0 +1,39 @@
+{
+  "name": "Todo",
+  "description": "A todobackend.com implementation",
+  "logo": "https://pbs.twimg.com/profile_images/760551690902900737/9vosg_bf.jpg",
+  "repository": "https://github.com/vapor/todo-example",
+  "keywords": ["swift", "vapor", "slack", "todo", "backend", "todobackend"],
+  "env": {
+    "MYSQL_HOST": {
+      "description": "The host of your mysql database",
+      "required": true
+    },
+    "MYSQL_USER": {
+      "description": "The username associated with your mysql database",
+      "required": true
+    },
+    "MYSQL_PASS": {
+      "description": "The password associated with your mysql database",
+      "required": true
+    },
+    "MYSQL_DB": {
+      "description": "The name of your mysql database",
+      "required": true
+    },
+    "MYSQL_PORT": {
+      "description": "The port associated with your mysql database. If unsure use 3306",
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "JawDB",
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/vapor/heroku-buildpack"
+    }
+  ]
+}
