@@ -3,7 +3,7 @@ import HTTP
 import Vapor
 import VaporMySQL
 
-let drop = Droplet(config: nil, preparations: [Todo.self], providers: [VaporMySQL.Provider.Temporary.self])
+let drop = Droplet(preparations: [Todo.self], providers: [VaporMySQL.Provider.Temporary.self])
 
 // MARK: Cors Headers
 
