@@ -79,3 +79,7 @@ When deploying, one may optionally include the `secrets` folder if they have a s
 ```
 
 Checkout [more documentation here](https://vapor.github.io/documentation/)
+
+## Thanks
+
+A great deal of work on this library was originally done by @sarbogast. Thanks 🙌
