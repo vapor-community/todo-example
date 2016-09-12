@@ -31,7 +31,7 @@ final class TodoController: ResourceRepresentable {
 
         var todo = todo
         todo.merge(updates: new)
-        try todo.save()
+        try todo.update()
         return todo
     }
 
