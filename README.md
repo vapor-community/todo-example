@@ -1,5 +1,7 @@
 # Vapor Todo Backend
 
+Run the specs [here](https://todo-backend-vapor.herokuapp.com)
+
 [Vapor](https://github.com/vapor/vapor) is a Swift backend framework to build server-side applications in Swift.
 
 [TodoBackend](http://www.todobackend.com) is a proof-of-concept catalog to demonstrate the implementation of the same simple API using different backend frameworks.
