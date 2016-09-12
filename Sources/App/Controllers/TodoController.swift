@@ -28,10 +28,9 @@ final class TodoController: ResourceRepresentable {
 
     func update(request: Request, todo: Todo) throws -> ResponseRepresentable {
         let new = try request.todo()
-
         var todo = todo
         todo.merge(updates: new)
-        try todo.update()
+        try todo.save()
         return todo
     }
 

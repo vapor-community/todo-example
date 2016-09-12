@@ -9,6 +9,9 @@ struct Todo: Model {
     var title: String?
     var completed: Bool?
     var order: Int?
+
+    // used by fluent internally
+    var exists: Bool = false
 }
 
 // MARK: NodeConvertible
