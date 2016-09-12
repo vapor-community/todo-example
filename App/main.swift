@@ -14,6 +14,8 @@ drop.middleware.append(CorsMiddleware())
 
 drop.get { _ in try drop.view.make("welcome") }
 
+// MARK: Tests Redirect
+
 drop.get("tests") { request in
     guard let baseUrl = request.baseUrl else { throw Abort.badRequest }
     let todosUrl = baseUrl + "todos"
