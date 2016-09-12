@@ -29,7 +29,7 @@
   "formation": {
   },
   "addons": [
-    "JawsDB"
+    "jawsdb"
   ],
   "buildpacks": [
     {
