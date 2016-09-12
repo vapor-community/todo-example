@@ -11,7 +11,7 @@ class CorsMiddleware: Middleware {
             response = try chain.respond(to: request)
         }
 
-        response.headers["Access-Control-Allow-Origin"] = "*" //request.headers["Origin"] ?? "*";
+        response.headers["Access-Control-Allow-Origin"] = request.headers["Origin"] ?? "*";
         response.headers["Access-Control-Allow-Headers"] = "X-Requested-With, Origin, Content-Type, Accept"
         response.headers["Access-Control-Allow-Methods"] = "POST, GET, PUT, OPTIONS, DELETE, PATCH"
         return response
