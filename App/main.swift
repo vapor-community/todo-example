@@ -1,3 +1,4 @@
+import HTTP
 import Vapor
 import VaporMySQL
 

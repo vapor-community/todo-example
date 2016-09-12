@@ -25,7 +25,7 @@ extension Todo: NodeConvertible {
         // model won't always have value to allow proper merges, 
         // database defaults to false
         let complete = completed ?? false
-        return try Node(node:
+        return try Node.init(node:
             [
                 "id": id,
                 "title": title,
