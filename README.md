@@ -1,4 +1,4 @@
-# Vapor Todo Backend
+# 📔 Vapor Todo Backend
 
 Run the specs [here](https://todo-backend-vapor.herokuapp.com)
 
@@ -8,12 +8,18 @@ Run the specs [here](https://todo-backend-vapor.herokuapp.com)
 
 This project is a TodoBackend implementation using Vapor, Swift and MySQL as a backend stack.
 
-## Requirements
+## 🌎 Environment
 
 - Swift 3.0 Gold Master
 - MySQL Database Credentials
 
-## Setup
+## 🦄 Deploy
+
+Fully deploy w/ MySQL Database included on Heroku.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+## 🛠 Setup
 
 ### Swift 3.0
 
@@ -64,9 +70,11 @@ brew install vapor/tap/toolbox
 curl -sL toolbox.vapor.sh | bash
 ```
 
-## Deploy
+## Manual Deploy
 
 When deploying, one may optionally include the `secrets` folder if they have a secure way of doing so. The official deploy is done through use of environment variables configured on the server that match the following scheme.
+
+#### `mysql.json`
 
 ```
 {
@@ -78,10 +86,16 @@ When deploying, one may optionally include the `secrets` folder if they have a s
   "encoding": "utf8"
 }
 
+// OR
+
+{
+  "url": "mysql://user:pass@host:3306/database"
+}
 ```
+
 
 Checkout [more documentation here](https://vapor.github.io/documentation/)
 
-## Thanks
+## 🙌 Thanks
 
 A great deal of work on this library was originally done by @sarbogast. Thanks 🙌
