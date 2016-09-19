@@ -3,11 +3,7 @@ import HTTP
 import Vapor
 import VaporMySQL
 
-let drop = Droplet(preparations: [Todo.self], providers: [VaporMySQL.Provider.self])
-
-// MARK: Cors Headers
-
-drop.middleware.append(CorsMiddleware())
+let drop = Droplet(staticServerMiddleware: [CorsMiddleware()], preparations: [Todo.self], providers: [VaporMySQL.Provider.self])
 
 // MARK: Landing Pages
 
@@ -27,4 +23,4 @@ drop.grouped(TodoURLMiddleware()).resource("todos", TodoController())
 
 // MARK: Serve
 
-drop.serve()
+drop.run()

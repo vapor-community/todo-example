@@ -24,7 +24,7 @@ extension Todo: NodeConvertible {
         order = node["order"]?.int
     }
 
-    func makeNode() throws -> Node {
+    func makeNode(context: Context) throws -> Node {
         // model won't always have value to allow proper merges, 
         // database defaults to false
         let complete = completed ?? false
