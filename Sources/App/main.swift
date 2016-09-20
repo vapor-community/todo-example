@@ -3,7 +3,12 @@ import HTTP
 import Vapor
 import VaporMySQL
 
-let drop = Droplet(staticServerMiddleware: [CorsMiddleware()], preparations: [Todo.self], providers: [VaporMySQL.Provider.self])
+let drop = Droplet(
+    availableMiddleware: ["cors" : CorsMiddleware()],
+    serverMiddleware: ["file", "cors"],
+    preparations: [Todo.self],
+    providers: [VaporMySQL.Provider.self]
+)
 
 // MARK: Landing Pages
 
