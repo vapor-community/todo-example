@@ -25,7 +25,7 @@ extension Todo: NodeConvertible {
     }
 
     func makeNode(context: Context) throws -> Node {
-        // model won't always have value to allow proper merges, 
+        // model won't always have value to allow proper merges,
         // database defaults to false
         let complete = completed ?? false
         return try Node.init(node:
@@ -43,11 +43,11 @@ extension Todo: NodeConvertible {
 
 extension Todo: Preparation {
     static func prepare(_ database: Database) throws {
-        try database.create("todos") { users in
-            users.id()
-            users.string("title", optional: true)
-            users.bool("completed")
-            users.int("order", optional: true)
+        try database.create("todos") { todos in
+            todos.id()
+            todos.string("title", optional: true)
+            todos.bool("completed")
+            todos.int("order", optional: true)
         }
     }
 
