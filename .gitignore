@@ -2,3 +2,4 @@ Packages
 .build
 *.xcodeproj
 /Config/secrets
+/Resources/Tests/SQLite/

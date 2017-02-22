@@ -1,18 +1,27 @@
 import URI
 import HTTP
 import Vapor
-import VaporMySQL
+import FluentSQLite
+import Fluent
+import VaporFluent
 
-let drop = Droplet(
-    availableMiddleware: ["cors" : CorsMiddleware()],
-    serverMiddleware: ["file", "cors"],
-    preparations: [Todo.self],
-    providers: [VaporMySQL.Provider.self]
-)
+let drop = Droplet()
+
+// Using Fluent
+try drop.addProvider(VaporFluent.Provider.self)
+drop.preparations.append(Todo.self)
+
+// Configure Database
+let sqldb = drop.resourcesDir + "Tests/SQLite/database.sqlite"
+let sqlDriver = try SQLiteDriver(path: sqldb)
+drop.database = Database(sqlDriver)
+
+// CORS Middleware
+drop.middleware.append(CORSMiddleware())
 
 // MARK: Landing Pages
 
-drop.get { _ in try drop.view.make("welcome") }
+drop.get { _ in try drop.view.make("welcome.html") }
 
 // MARK: Tests Redirect
 

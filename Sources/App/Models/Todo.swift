@@ -1,41 +1,33 @@
 import Vapor
 import Fluent
+import VaporFluent
 
 // MARK: Model
 
-struct Todo: Model {
-    var id: Node?
+final class Todo: Model, NodeConvertible {
+    let storage = Storage()
 
     var title: String?
     var completed: Bool?
     var order: Int?
 
-    // used by fluent internally
-    var exists: Bool = false
-}
-
-// MARK: NodeConvertible
-
-extension Todo: NodeConvertible {
-    init(node: Node, in context: Context) throws {
-        id = node["id"]
+    init(node: Node, in context: Context) {
         title = node["title"]?.string
         completed = node["completed"]?.bool
         order = node["order"]?.int
+
+        id = node[idKey]
     }
 
     func makeNode(context: Context) throws -> Node {
+        var node = Node([:])
+        try node.set("id", id)
+        try node.set("title", title)
         // model won't always have value to allow proper merges,
         // database defaults to false
-        let complete = completed ?? false
-        return try Node.init(node:
-            [
-                "id": id,
-                "title": title,
-                "completed": complete,
-                "order": order
-            ]
-        )
+        try node.set("completed", completed ?? false)
+        try node.set("order", order)
+        return node
     }
 }
 
@@ -43,8 +35,8 @@ extension Todo: NodeConvertible {
 
 extension Todo: Preparation {
     static func prepare(_ database: Database) throws {
-        try database.create("todos") { todos in
-            todos.id()
+        try database.create(entity) { todos in
+            todos.id(for: Todo.self)
             todos.string("title", optional: true)
             todos.bool("completed")
             todos.int("order", optional: true)
@@ -59,7 +51,7 @@ extension Todo: Preparation {
 // MARK: Merge
 
 extension Todo {
-    mutating func merge(updates: Todo) {
+    func merge(updates: Todo) {
         id = updates.id ?? id
         completed = updates.completed ?? completed
         title = updates.title ?? title
