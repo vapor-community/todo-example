@@ -12,8 +12,8 @@ try drop.addProvider(VaporFluent.Provider.self)
 drop.preparations.append(Todo.self)
 
 // Configure Database
-let sqldb = drop.resourcesDir + "Tests/SQLite/database.sqlite"
-let sqlDriver = try SQLiteDriver(path: sqldb)
+//let sqldb = drop.resourcesDir + "Tests/SQLite/database.sqlite"
+let sqlDriver = try SQLiteDriver(path: ":memory:")
 drop.database = Database(sqlDriver)
 
 // CORS Middleware
